@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   height: 100vh;
 }
@@ -13,6 +14,7 @@ img.logo {
   margin-right: auto;
   max-width: 100%;
 }
+
 img.navpic {
   position: fixed;
   bottom: 2px;
@@ -20,14 +22,8 @@ img.navpic {
   right: -2px;
   width: 101vw;
   min-height: 145px;
-  z-index: -1;
   -webkit-filter: drop-shadow(-20px 5px 20px rgb(85, 85, 85));
   filter: drop-shadow(-20px 5px 20px #555);
-}
-
-h2 {
-  font-family: roboto;
-  font-weight: bold;
 }
 
 ul {
@@ -51,6 +47,7 @@ li a {
   text-decoration: none;
   font-family: roboto;
 }
+
 a.homeAndAbout {
   color: #888;
 }
@@ -63,5 +60,38 @@ nav {
   position: fixed;
   bottom: 0;
   width: 100vw;
+}
+
+/*Styleing for enkeltsider*/
+
+h1 {
+  font-family: roboto;
+  font-weight: lighter;
+  font-size: 6rem;
+  color: #464646;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+}
+/*.container img{
+  z-index: 1; 
+  }- du må fikse et heldekkende nav-bilde først.*/
+
+
+.left-half {
+  flex: 3;
+  padding: 3rem;
+}
+
+.right-half {
+  flex: 1;
+  padding: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
