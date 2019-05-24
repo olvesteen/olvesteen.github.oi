@@ -17,11 +17,9 @@ img.logo {
 
 img.navpic {
   position: fixed;
-  bottom: 2px;
-  left: -2px;
-  right: -2px;
-  width: 101vw;
-  min-height: 145px;
+  bottom: -25px;
+  width: 100vw;
+  min-height: 130px;
   -webkit-filter: drop-shadow(-20px 5px 20px rgb(85, 85, 85));
   filter: drop-shadow(-20px 5px 20px #555);
 }
@@ -32,7 +30,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: none;
-  background-color: #464646;
+  /*background-color: #464646;*/
   height: 43px;
   justify-content: space-between;
   flex-direction: row;
@@ -60,6 +58,7 @@ nav {
   position: fixed;
   bottom: 0;
   width: 100vw;
+  z-index: 2;
 }
 
 /*Styleing for enkeltsider*/
@@ -70,7 +69,11 @@ h1 {
   font-size: 6rem;
   color: #464646;
 }
-
+p {
+  font-family: roboto;
+  color: #464646;
+  font-size: 16px;
+}
 div {
   display: flex;
   flex-direction: column;
@@ -88,10 +91,24 @@ div {
 .left-half {
   flex: 3;
   padding: 3rem;
+  max-width: 80%;
+}
+.left-half img {
+  z-index: 1;
+  object-fit: contain;
 }
 
 .right-half {
   flex: 1;
   padding: 1rem;
+}
+.left-half-2 {
+  flex: 1;
+  padding-left: 5rem;
+}
+
+.right-half-2 {
+  flex: 1.5;
+  padding: 4rem;
 }
 /*# sourceMappingURL=main.css.map */
