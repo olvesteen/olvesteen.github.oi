@@ -30,7 +30,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: none;
-  /*background-color: #464646;*/
   height: 43px;
   justify-content: space-between;
   flex-direction: row;
@@ -66,7 +65,7 @@ nav {
 h1 {
   font-family: roboto;
   font-weight: lighter;
-  font-size: 6rem;
+  font-size: 5rem;
   color: #464646;
 }
 p {
@@ -83,24 +82,21 @@ div {
 .container {
   display: flex;
 }
-/*.container img{
-  z-index: 1; 
-  }- du må fikse et heldekkende nav-bilde først.*/
-
 
 .left-half {
-  flex: 3;
-  padding: 3rem;
-  max-width: 80%;
+  flex: 1;
+  padding: 1rem;
 }
 .left-half img {
-  z-index: 1;
   object-fit: contain;
+  width: 70vw;
+  /*filter: drop-shadow(-20px 5px 70px #999999);*/
 }
 
 .right-half {
   flex: 1;
   padding: 1rem;
+  width: 30vw;
 }
 .left-half-2 {
   flex: 1;
@@ -108,7 +104,15 @@ div {
 }
 
 .right-half-2 {
-  flex: 1.5;
-  padding: 4rem;
+  flex: 1;
 }
+.right-half-2 img {
+  width: 70vw;
+}
+.bottom-pic {
+  display: block;
+  align-content: center;
+  padding: 2rem;
+}
+
 /*# sourceMappingURL=main.css.map */
