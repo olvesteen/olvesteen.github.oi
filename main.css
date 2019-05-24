@@ -49,6 +49,10 @@ a.homeAndAbout {
   color: #888;
 }
 
+a.active {
+  color: #29A1AE;
+}
+
 li a:hover {
   color: #000;
 }
@@ -85,18 +89,17 @@ div {
 
 .left-half {
   flex: 1;
-  padding: 1rem;
+  padding: 2rem;
 }
 .left-half img {
   object-fit: contain;
-  width: 70vw;
+  width: 65vw;
   /*filter: drop-shadow(-20px 5px 70px #999999);*/
 }
 
 .right-half {
   flex: 1;
   padding: 1rem;
-  width: 30vw;
 }
 .left-half-2 {
   flex: 1;
