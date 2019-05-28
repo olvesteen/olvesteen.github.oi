@@ -112,10 +112,11 @@ div {
 .right-half-2 img {
   width: 70vw;
 }
-.bottom-pic {
-  display: block;
-  align-content: center;
-  padding: 2rem;
+
+.widescreen img {
+  margin-top: 150px;
+  height: 100vh;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
