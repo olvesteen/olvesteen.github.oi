@@ -99,8 +99,7 @@ div {
 
 .right-half {
   flex: 1;
-  padding: 1rem;
-}
+  padding: 1rem;}
 .left-half-2 {
   flex: 1;
   padding-left: 5rem;
