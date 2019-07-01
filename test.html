@@ -5,30 +5,27 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <style type="text/css" media="screen">
-
-    </style>
 </head>
 
 <body onload="activate()">
     <img src="img/nav.svg" class="navpic">
-    
+
     <!--Navigation bar-->
-<div id="nav-placeholder">
+    <div id="nav-placeholder">
 
-</div>
+    </div>
 
-<script>
-$(function(){
-  $("#nav-placeholder").load("nav.html");
-});
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
 
-function activate() {
-  var element = document.getElementById("tresnitt");
-  element.classList.add("active");
-}
-</script>
-<!--end of Navigation bar-->
+        function activate() {
+            var element = document.getElementById("tresnitt");
+            element.classList.add("active");
+        }
+    </script>
+    <!--end of Navigation bar-->
 
 
     <section class="container">

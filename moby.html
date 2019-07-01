@@ -4,25 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body>
+<body onload="activate()">
     <img src="img/nav.svg" class="navpic">
-    <nav>
-        <ul>
-            <li><a class="homeAndAbout" href="index.html">Home</a></li>
-            <li><a class="homeAndAbout" href="about.html">About</a></li>
-            <li><a class="active" href="moby.html">Moby</a></li>
-            <li><a href="wave.html">Flow</a></li>
-            <li><a href="radio.html">Gaga</a></li>
-            <li><a href="birdsview.html">BirdsView</a></li>
-            <li><a href="app.html">App</a></li>
-            <li><a href="about.html">Kuven</a></li>
-            <li><a href="smoller.html">S. Møller</a></li>
-            <li><a href="kakskiv.html">Kakskiv</a></li>
-            <li><a href="root.html">Root</a></li>
-        </ul>
-    </nav>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+
+        function activate() {
+            var element = document.getElementById("moby");
+            element.classList.add("active");
+        }
+    </script>
+    <!--end of Navigation bar-->
     <section class="container">
         <div class="left-half">
             <img src="img/moby.jpg">
@@ -40,12 +42,12 @@
         </div>
     </section>
     <secton class="container">
-    <div class="left-half">
-        <img style="max-width: 50vw;" src="img/mobySkruer.jpg">
-    </div>
-    <div class="right-half"> 
-        <p>Her skal det stå noe om festemekanismen og slikt</p>
-    </div>
+        <div class="left-half">
+            <img style="max-width: 50vw;" src="img/mobySkruer.jpg">
+        </div>
+        <div class="right-half">
+            <p>Her skal det stå noe om festemekanismen og slikt</p>
+        </div>
     </secton>
     <div class="widescreen">
         <img src="img/mobyWidecreen.png">
