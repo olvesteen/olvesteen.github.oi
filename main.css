@@ -134,5 +134,49 @@ div {
   height: 100vh;
   object-fit: cover;
 }
-
 /*# sourceMappingURL=main.css.map */
+
+/* ----------------------- Mobile dropdown menu ------------------------ */
+
+/* Hide checkbox */
+.toggle,
+[id^=drop] {
+	display: none;
+}
+/* Media Queries
+------------------------------------------------------------ */
+
+@media all and (max-width : 930px) {
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: #464646;
+    width: 100%;
+    height: 90%;
+    padding: 10% 40%
+	}
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		padding:14px 20px;	
+		font-size:17px;
+    text-decoration:none;
+    font-family: roboto;
+    color: white;
+    border:none;
+    float: right;
+	}
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+    width: 100%;
+    left: 50%;
+		}
+}
