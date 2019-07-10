@@ -97,47 +97,32 @@ div {
   flex-direction: row;
 }
 
-.left-half, .right-half, .left-half-2, .right-half-2{
+.left-half,
+.right-half {
   flex: 1;
   padding: 3rem;
 }
 
-.left-half img, .right-half img, .left-half-2 img, .right-half-2 img{
+.left-half img,
+.right-half img {
   object-fit: contain;
   width: 60vw;
   /*filter: drop-shadow(-20px 5px 70px #999999);*/
 }
 
-/* .left-half-2 {
-  flex: 1;
-  padding: 3rem;
-  
-  .right-half-2 {
-    flex: 1;
-  }
-  
-  .right-half-2 img {
-    width: 70vw;
-  }
-}*/
 
-.left-pic, .right-pic {
+.left-pic,
+.right-pic {
   flex: 1;
   flex-direction: row;
 }
 
-.left-pic img, .right-pic img {
+.left-pic img,
+.right-pic img {
   height: auto;
   width: 40vw;
   object-fit: contain;
 }
-
-
-/*.right-pic img {
-  bottom: 0;
-  max-width: 50vw;
-  object-fit: contain;
-}*/
 
 .widescreen img {
   margin-top: 150px;
@@ -197,9 +182,9 @@ div {
     position: fixed;
     top: 0;
     background-color: #464646;
-    width: 100%;
-    height: 90%;
-    padding: 10% 40%
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
   }
 
   /* Stylinf the toggle lable */
@@ -216,14 +201,45 @@ div {
 
   /* Display Dropdown when clicked on Parent Lable */
   [id^=drop]:checked+ul {
-    display: block;
+    display: flex;
   }
 
   /* Change menu item's width to 100% */
+  ul {
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
   nav ul li {
-    display: block;
-    width: 100%;
-    left: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  .left-half,
+  .right-half {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  .left-half img,
+  .right-half img {
+    object-fit: contain;
+    width: 95vw;
+
+  }
+
+  div {
+    flex-direction: row;
+  }
+
+  .widescreen img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -238,3 +254,4 @@ div {
     display: block;
     bottom: -7%;
   }
+}
