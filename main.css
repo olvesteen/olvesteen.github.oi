@@ -97,6 +97,7 @@ div {
   flex-direction: row;
 }
 
+
 .left-half,
 .right-half {
   flex: 1;
@@ -109,7 +110,14 @@ div {
   width: 60vw;
   /*filter: drop-shadow(-20px 5px 70px #999999);*/
 }
-
+section div:first-child{
+  padding-right: 0;
+}
+.right-header {
+  flex: 1;
+  padding: 38vh 0 0;
+  flex-direction: row;
+}
 
 .left-pic,
 .right-pic {
@@ -230,11 +238,14 @@ div {
   .right-half img {
     object-fit: contain;
     width: 95vw;
-
   }
 
   div {
     flex-direction: row;
+    transition: max-height 2s;
+  }
+  .right-header{
+    padding: 2rem;
   }
 
   .widescreen img {

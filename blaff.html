@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
@@ -12,54 +11,60 @@
     <div id="nav-placeholder">
 
     </div>
-
     <script>
         $(function () {
             $("#nav-placeholder").load("nav.html");
         });
-
         function activate() {
-            var element = document.getElementById("moby");
+            var element = document.getElementById("blaff");
             element.classList.add("active");
         }
     </script>
     <!--end of Navigation bar-->
+
     <section class="container">
         <div class="left-half">
-            <img src="img/moby.jpg">
+            <img style="z-index: 1; max-width: 50vw;" src="img/blaff_trans.png">
         </div>
         <div class="right-header">
-            <h1>moby</h1>
+            <h1>blaff</h1>
         </div>
     </section>
     <section class="container">
         <div class="left-half">
-            <p>Lorem ipsum dorot amet ipsum dorot amet ipsum dorot amet.</p>
+            <p>Hvor mye trenger man for å lage en hylle? Blaff er en ministudie i bending av kryssfiner. </p>
         </div>
         <div class="right-half">
-            <img src="img/mobyDoodle.jpg">
+            <img src="img/tresnittDoodle.jpg">
         </div>
     </section>
     <secton class="container">
         <div class="left-half">
-            <img style="max-width: 50vw;" src="img/mobySkruer.jpg">
+            <img style="max-height: 90vh;" src="img/blaff_under.jpg">
         </div>
         <div class="right-half">
-            <p>Her skal det stå noe om festemekanismen og slikt</p>
+            <p>Her skal det stå noe om Pat Metheney</p>
         </div>
     </secton>
-
+    <p style="padding: 70px;">her skal det stå noe om abumCover</p>
     <section class="container">
-        <div class="left-half">
-            <p>Geometrisk enkelhet</p>
+        <div style="padding-left: 0" class="left-half">
+            <img src="img/smoller_cover1.svg">
         </div>
         <div class="right-half">
-            <img src="img/moby_geometric.svg">
+            <img style="width: auto;" src="img/smoller_cover2.svg">
         </div>
     </section>
+    <secton class="container">
+        <div class="left-half">
+            <img style="max-width: 60vh; padding-top: 100px" src="img/smoller_visittkort.svg">
+        </div>
+        <div class="right-half">
+            <p>Her skal det stå noe om visittkort</p>
+        </div>
+    </secton>
     <div class="widescreen">
-        <img src="img/mobyWidecreen.png">
+        <img style="margin-top: 0" src="img/blaff_widescreen.jpg">
     </div>
 </body>
-
 </html>
