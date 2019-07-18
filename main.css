@@ -83,6 +83,7 @@ p {
   color: #464646;
   font-size: 16px;
   padding: 3rem;
+  max-width: 700px;
 }
 
 div {
@@ -108,11 +109,12 @@ div {
 .right-half img {
   object-fit: contain;
   width: 60vw;
-  /*filter: drop-shadow(-20px 5px 70px #999999);*/
 }
-section div:first-child{
+/* fjern padding-right på overskiften */
+section div:first-child {
   padding-right: 0;
 }
+
 .right-header {
   flex: 1;
   padding: 38vh 0 0;
@@ -130,6 +132,18 @@ section div:first-child{
   height: auto;
   width: 40vw;
   object-fit: contain;
+}
+
+.shadow {
+  /*filter: drop-shadow(-20px 5px 70px #000000);*/
+  -webkit-box-shadow: -161px 135px 71px -17px rgba(0,0,0,0.3);
+  -moz-box-shadow: -161px 135px 71px -17px rgba(0,0,0,0.3);
+  box-shadow: -161px 135px 71px -17px rgba(0,0,0,0.3);
+}
+.shadow-low {
+  -webkit-box-shadow: -27px 26px 22px 6px rgba(0,0,0,0.24);
+  -moz-box-shadow: -27px 26px 22px 6px rgba(0,0,0,0.24);
+  box-shadow: -27px 26px 22px 6px rgba(0,0,0,0.24);
 }
 
 .widescreen img {
@@ -171,6 +185,7 @@ section div:first-child{
 
   .container {
     flex-direction: column;
+    margin-bottom: 6rem; 
   }
 
   #nav-pic,
@@ -193,6 +208,7 @@ section div:first-child{
     width: 100vw;
     height: 100vh;
     z-index: -1;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)
   }
 
   /* Stylinf the toggle lable */
@@ -237,20 +253,39 @@ section div:first-child{
   .left-half img,
   .right-half img {
     object-fit: contain;
-    width: 95vw;
+    width: 100%;
   }
 
   div {
     flex-direction: row;
     transition: max-height 2s;
   }
-  .right-header{
+  .last {
+    order: 2;
+  }
+  .first {
+    order: 1;
+  }
+/* fiks paddingen */
+  section div:first-child {
+    padding-right: 2rem;
+  }
+
+  .right-header {
     padding: 2rem;
   }
 
   .widescreen img {
     max-width: 100%;
     height: auto;
+  }
+
+  #woodpecker img {
+    display: none;
+  }
+
+  .right-pic img {
+    margin-top: 1rem;
   }
 }
 
