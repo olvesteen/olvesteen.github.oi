@@ -185,7 +185,7 @@ section div:first-child {
 
   .container {
     flex-direction: column;
-    margin-bottom: 6rem; 
+    padding-bottom: 2rem; 
   }
 
   #nav-pic,
@@ -208,19 +208,25 @@ section div:first-child {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1)
+    transform: scaleY(1);
+    transition: all 3s ease;
   }
 
   /* Stylinf the toggle lable */
   .toggle {
     display: block;
-    padding: 3% 10%;
     font-size: 17px;
     text-decoration: none;
     font-family: roboto;
     border: none;
     color: white;
     float: right;
+    background-image: url("img/nav_hamburger.svg");
+    background-position: center;  /*Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;
+  padding: 3% 8%;
+  margin: 2%;
   }
 
   /* Display Dropdown when clicked on Parent Lable */
@@ -242,6 +248,9 @@ section div:first-child {
 
   p {
     padding: 0;
+  }
+  .lighter {
+    color: lightgray;
   }
 
   .left-half,
@@ -277,7 +286,7 @@ section div:first-child {
 
   .widescreen img {
     max-width: 100%;
-    height: auto;
+    margin-top: 0;
   }
 
   #woodpecker img {
@@ -286,6 +295,9 @@ section div:first-child {
 
   .right-pic img {
     margin-top: 1rem;
+  }
+  .left-pic img, .right-pic img{
+    width: 70vw;
   }
 }
 
