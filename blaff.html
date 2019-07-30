@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body onload="activate()">
+<body onload="activate()" style="background-color: #212121;">
     <!--Navigation bar-->
     <div id="nav-placeholder">
 
@@ -15,6 +16,7 @@
         $(function () {
             $("#nav-placeholder").load("nav.html");
         });
+
         function activate() {
             var element = document.getElementById("blaff");
             element.classList.add("active");
@@ -27,19 +29,38 @@
             <img style="z-index: 1; max-width: 50vw;" src="img/blaff_trans.png">
         </div>
         <div class="right-header">
-            <h1>blaff</h1>
+            <h1 class="lighter" >blaff</h1>
         </div>
     </section>
-    <section class="container">
+    <section class="container whitespace">
         <div class="left-half">
-            <p>Hvor mye trenger man for å lage en hylle? Blaff er en ministudie i bending av kryssfiner. </p>
+            <p class="lighter" >Dette prosjektet handler om å sette spørsmålstegn ved hva en hylle kan være, samt hva den kan være laget
+                av. I tillegg er det en studie i bøying av kryssfiner. </p>
         </div>
         <div class="right-half">
-            <img src="img/tresnittDoodle.jpg">
+            <img src="img/blaff_verksted.jpg" class="shadow">
+        </div>
+    </section>
+    <section class="container whitespace-margin">
+        <div class="left-half">
+            <img src="img/blaff_under.jpg" class="vertical-pic shadow">
+        </div>
+        <div class="right-half">
+            <p class="lighter">Resultatet ble en hylle av 4mm tykk kryssfiner, litt tau og noen plankebiter. Brukeren setter
+                opp, organiserer og endrer den etter sitt eget behov. </p>
+        </div>
+    </section>
+    <section class="container whitespace-margin">
+        <div class="left-half last">
+            <p class="lighter">Den trenger dog noe å lene seg på. </p>
+        </div>
+        <div class="right-half first">
+            <img src="img/blaff_side.jpg" class="shadow vertical-pic">
         </div>
     </section>
     <div class="widescreen">
         <img style="margin-top: 0" src="img/blaff_widescreen_light.jpg">
     </div>
 </body>
+
 </html>
