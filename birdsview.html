@@ -4,51 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body style="background-color: #EBF0FE;">
-    <img src="img/nav.svg" class="navpic">
-    <nav>
-        <ul>
-            <li><a class="homeAndAbout" href="index.html">Home</a></li>
-            <li><a class="homeAndAbout" href="about.html">About</a></li>
-            <li><a href="moby.html">Moby</a></li>
-            <li><a href="wave.html">Flow</a></li>
-            <li><a href="radio.html">Gaga</a></li>
-            <li><a class="active" href="birdsview.html">BirdsView</a></li>
-            <li><a href="app.html">App</a></li>
-            <li><a href="about.html">Kuven</a></li>
-            <li><a href="smoller.html">S. Møller</a></li>
-            <li><a  href="kakskiv.html">Kakskiv</a></li>
-            <li><a href="root.html">root</a></li>
-        </ul>
-    </nav>
+<body onload="activate()" style="background-color: #EBF0FE;">
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+
+        function activate() {
+            var element = document.getElementById("birdsview");
+            element.classList.add("active");
+        }
+    </script>
+    <!--end of Navigation bar-->
+
+    <section class="container whitespace">
+        <div class="left-half">
+            <img style="z-index: 1; width: 90vw;" src="img/birdsview_iconAndText.svg">
+        </div>
+    </section>
+    <section class="container whitespace">
+        <div>
+            <img src="img/birdsview_gutta.png" style="width: 90vw;">
+        </div>
+    </section>
     <section class="container">
         <div class="left-half">
-            <img style="z-index: 1;" src="img/birdsview_icon.svg">
-        </div>
-        <div class="right-half">
-            <h1>designer i<br>Birdsview</h1>
-        </div>
-    </section>
-    <section class="container">
-        <div class="left-half-2">
             <p>Som sjefsdesigner i Bv, er det ... birdsview.no ipsum dorot amet ipsum dorot amet ipsum dorot amet.</p>
         </div>
-        <div class="right-half-2">
-            <img src="img/birdsview_textAndIcon.svg">
-        </div>
     </section>
-    <section class="container">
-        <div class="left-pic">
+    <section class="container whitespace" style="padding-bottom: 0;">
+        <div style="background-color: #EBF0FE;" class="left-pic" id="woodpecker">
             <img src="img/birdsview_woodpecker.gif">
         </div>
-        <div class="right-pic">
+        <div style="background-color: #EBF0FE;" class="right-pic">
             <img src="img/birdsview_dipper.gif">
         </div>
     </section>
-    <div class="widescreen">
-        <img style="margin-top: 0" src="img/kakskiv_close.jpg">
+    <section class="container shadow-low" style="background-color: #1B3760; height: 70vh;">
+        <div style="align-items: center" class="left-half">
+            <p style="color: #EBF0FE;">Noe om følelsen giffene skal gi deg.</p>
+        </div>
+    </section>
+    <section class="container" style="margin-top: 20vh; padding-bottom: 0;">
+        <div class="left-pic">
+            <img src="img/birdsview_kontorbygg.gif">
+        </div>
+        <div class="right-pic">
+            <img src="img/birdsview_analytiker.gif">
+        </div>
+    </section>
+    <section class="container" style="background-color: #1B3760; height: 70vh;">
+            <div style="align-items: center" class="left-half">
+                <p style="color: #EBF0FE;">fortsatt godfølelsen</p>
+            </div>
+        </section>
+    <div class="widescreen" style="margin-top: -1px;">
+        <img style="margin-top: 0" src="img/birdsview_pole.jpg">
     </div>
 </body>
 
