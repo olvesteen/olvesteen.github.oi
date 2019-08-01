@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body onload="activate()">
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+
+        function activate() {
+            var element = document.getElementById("flow");
+            element.classList.add("active");
+        }
+    </script>
+    <!--end of Navigation bar-->
+    <section class="container">
+        <div class="left-half">
+            <img style="z-index: 1;" src="img/wave.svg">
+        </div>
+        <div class="right-header">
+            <h1>flow<br>city</h1>
+        </div>
+    </section>
+    <section class="container whitespace">
+        <div class="left-half">
+            <p>Design EXPO er en årlig konferanse arrangert av sivilingeniørstudentene 
+                på Institutt for Design ved NTNU i Trondheim. Temaet i 2019 var psykologi og design, 
+                med headlineren: Mind the Mind. Jeg var markedsførings-leder og hadde blant annet ansvaret, 
+                sammen med teamet mitt, å lage en grafisk profil som matchet temaet og headlineren. Vi ville lage noe som kunne 
+                representere kompleksiteten og mystikken av hva som foregår oppe i toppen på oss mennesker.
+                <br><br>
+                Resultatet ble en rekke isometriske illustrasjoner som utfordrer betrakteren med intrikate og umulige geometriske former. 
+                Flow City var en av mine illustrasjoner. 
+            </p>
+        </div>
+        <div class="right-half">
+            <img src="img/waveDoodle.png">
+        </div>
+    </section>
+    <div class="widescreen">
+        <img src="img/xWidescreen.svg">
+    </div>
+
+</body>
+
+</html>

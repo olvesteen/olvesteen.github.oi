@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body onload="activate()">
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+
+        function activate() {
+            var element = document.getElementById("barneleker");
+            element.classList.add("active");
+        }
+    </script>
+    <!--end of Navigation bar-->
+
+    <section class="container">
+        <div class="left-half">
+            <img style="z-index: 1; max-width: 50vw;" src="img/smoller.svg">
+        </div>
+        <div class="right-header">
+            <h1>barneleker</h1>
+        </div>
+    </section>
+    <section class="container">
+        <div class="left-half">
+            <p>Lorem ipsum dorot amet ipsum dorot amet ipsum dorot amet.</p>
+        </div>
+        <div class="right-half">
+            <img src="img/tresnittDoodle.jpg">
+        </div>
+    </section>
+    <secton class="container">
+        <div class="left-half">
+            <img style="max-height: 90vh; padding: 100px 0" src="img/smoller_pat.jpg">
+        </div>
+        <div class="right-half">
+            <p>Her skal det stå noe om Pat Metheney</p>
+        </div>
+    </secton>
+    <p style="padding: 70px;">her skal det stå noe om abumCover</p>
+    <section class="container">
+        <div style="padding-left: 0" class="left-half">
+            <img src="img/smoller_cover1.svg">
+        </div>
+        <div class="right-half">
+            <img style="width: auto;" src="img/smoller_cover2.svg">
+        </div>
+    </section>
+    <secton class="container">
+        <div class="left-half">
+            <img style="max-width: 60vh; padding-top: 100px" src="img/smoller_visittkort.svg">
+        </div>
+        <div class="right-half">
+            <p>Her skal det stå noe om visittkort</p>
+        </div>
+    </secton>
+    <div class="widescreen">
+        <img style="margin-top: 0" src="img/smoller_band.svg">
+    </div>
+</body>
+
+</html>

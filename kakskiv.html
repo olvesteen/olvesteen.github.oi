@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body onload="activate()">
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+
+        function activate() {
+            var element = document.getElementById("kakskiv");
+            element.classList.add("active");
+        }
+    </script>
+    <!--end of Navigation bar-->
+    <section class="container">
+        <div class="left-half">
+            <img style="z-index: 1;" src="img/kakskiv.png">
+        </div>
+        <div class="right-header">
+            <h1>kakskiv</h1>
+        </div>
+    </section>
+    <section class="container whitespace">
+        <div class="left-half last">
+            <p>Jeg fikk tak i et passe stort reststykke av ask som jeg syntes burde brukes til noe fint. Det resultere i seks
+                serveringsfjøler med lærhemper som kan benyttes for enhver anledning. Jeg fokuserte på å lage et tidløst design
+                som var enkelt å repetere med tanke på at jeg skulle lage flere like. </p>
+        </div>
+        <div class="right-half first">
+            <img src="img/kakskivDoodle.jpg">
+        </div>
+    </section>
+    <section class="container whitespace-margin">
+        <div class="left-half">
+            <img src="img/kakskiv_hemper.jpg" class="vertical-pic shadow">
+        </div>
+        <div class="right-half">
+            <p>Lærhempen går godt sammen med kobberskruene og danner en flott palett med det lyse treverket.
+                Skruene og hempene er pusset flush med treet.</p>
+        </div>
+    </section>
+    <section class="container whitespace">
+        <div class="left-half last">
+            <p>Fjølene er plassert i en åpen boks som gir lærhempen en funksjon, mer enn å bare være en elegant detalj.</p>
+        </div>
+        <div class="right-half first">
+            <img src="img/kakskiv_closefar.jpg" class="shadow">
+        </div>
+    </section>
+    <div class="widescreen">
+        <img style="margin-top: 0" src="img/kakskiv_close.jpg">
+    </div>
+</body>
+
+</html>

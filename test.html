@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body onload="activate()">
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+
+        function activate() {
+            var element = document.getElementById("tresnitt");
+            element.classList.add("active");
+        }
+    </script>
+    <!--end of Navigation bar-->
+
+
+    <section class="container">
+        <div class="left-half">
+            <img style="z-index: 1;" src="img/kakskiv.png">
+        </div>
+        <div class="right-half">
+            <h1>kakskiv</h1>
+        </div>
+    </section>
+</body>
+
+</html>
