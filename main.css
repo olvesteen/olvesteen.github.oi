@@ -55,7 +55,6 @@ li a {
   font-size: 16px;
   text-align: center;
   text-decoration: none;
-  font-family: roboto;
 }
 
 a.homeAndAbout {
@@ -79,15 +78,18 @@ nav {
 
 /*Styleing for enkeltsider*/
 
-h1 {
-  font-family: roboto;
+h1, p, li a{
+  font-family: 'Roboto', sans-serif;
+}
+h1 {  
   font-weight: lighter;
   font-size: 5rem;
   color: #464646;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 p {
-  font-family: roboto;
   color: #464646;
   font-size: 16px;
   padding: 3rem;
@@ -260,8 +262,8 @@ img.vertical-pic {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    transform: scaleY(1);
-    transition: all 3s ease;
+    /*transform: scaleY(1);
+    transition: all 3s ease;*/
   }
 
   /* Stylinf the toggle lable */
@@ -355,6 +357,12 @@ img.vertical-pic {
   .right-pic img {
     width: 70vw;
   }
+ h1 {
+   font-size: 8rem;
+ }
+  p, li a {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-aspect-ratio: 5/8) {
@@ -368,4 +376,8 @@ img.vertical-pic {
     display: block;
     bottom: -7%;
   }
+  p, li a {
+    font-size: 2rem;
+  }
+  
 }
