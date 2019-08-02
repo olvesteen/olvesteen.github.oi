@@ -6,6 +6,7 @@
 body {
   height: 100vh;
 }
+
 img.logo {
   max-height: 90vh;
   display: block;
@@ -13,9 +14,11 @@ img.logo {
   margin-right: auto;
   max-width: 100%;
 }
+
 .portrait {
   margin-top: 5vh;
 }
+
 .size-mobile {
   height: 0;
 }
@@ -106,9 +109,11 @@ div {
   max-width: 100vw;
   flex-direction: row;
 }
+
 .whitespace {
   padding: 15vh 0;
 }
+
 .whitespace-margin {
   margin: 15vh 0;
 }
@@ -171,7 +176,7 @@ section div:first-child {
 
 img.vertical-pic {
   max-height: 90vh;
-  width: auto; 
+  width: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
@@ -188,39 +193,45 @@ img.vertical-pic {
 ------------------------------------------------------------------------ */
 
 
-@media all and (max-width : 930px) {
+@media (max-aspect-ratio: 9/8) {
 
   .container {
     flex-direction: column;
     padding-bottom: 2rem;
   }
+
   .whitespace {
     padding: 20vh 0;
   }
+
   .whitespace-margin {
     margin: 20vh 0;
   }
-img.vertical-center{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.portrait {
-  margin-top: 0;
-}
-.portrait img {
-  width: 100%;
-  height: 106vh;
-  object-fit: cover;
-}
-.size-web {
-  height: 0 !important;
-  width: 0 !important;
-}
 
-/*
+  img.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .portrait {
+    margin-top: 0;
+  }
+
+  .portrait img {
+    width: 100%;
+    height: 106vh;
+    object-fit: cover;
+  }
+
+  .size-web {
+    height: 0 !important;
+    width: 0 !important;
+  }
+
+  /*
   img.zoom {
     width: 190vw;
 
@@ -346,7 +357,7 @@ img.vertical-center{
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-aspect-ratio: 5/8) {
 
   #nav-pic,
   #navTab-pic {
