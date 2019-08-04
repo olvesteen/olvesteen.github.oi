@@ -249,6 +249,9 @@ img.vertical-pic {
     height: 0 !important;
     width: 0 !important;
   }
+  .extra-margin-bottom {
+    margin-bottom: 20rem;
+  }
 
   /*
   img.zoom {
