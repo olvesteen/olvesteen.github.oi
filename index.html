@@ -4,17 +4,19 @@
 <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="main.css">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>     
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body onload="activate()" style="background-color: #F4D873">
-        <img src="img/logo.svg" class="logo vertical-center" alt="Olve Design">
+<body onload="activate()">
         <!--Navigation bar-->
         <div id="nav-placeholder">
 
         </div>
-
+        <div class="background-gradient">
+                <img src="img/logo.svg" class="logo vertical-center" alt="Olve Design">
+        </div>
         <script>
                 $(function () {
                         $("#nav-placeholder").load("nav.html");

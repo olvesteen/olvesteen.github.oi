@@ -78,10 +78,13 @@ nav {
 
 /*Styleing for enkeltsider*/
 
-h1, p, li a{
+h1,
+p,
+li a {
   font-family: 'Roboto', sans-serif;
 }
-h1 {  
+
+h1 {
   font-weight: lighter;
   font-size: 5rem;
   color: #464646;
@@ -180,6 +183,19 @@ img.vertical-pic {
   max-height: 90vh;
   width: auto;
 }
+.background-gradient {
+  height: 100vh;
+
+  background-color: #E4C969;    
+
+   /* transition the background-color over 1s with a linear animation */
+   transition: background-color 5s cubic-bezier(0.57, 0, 0.26, 1);;
+}
+
+/* the :hover that causes the background-color to change */
+.background-gradient:hover {
+   background-color: #F4D873;      
+  }
 
 /*# sourceMappingURL=main.css.map */
 
@@ -193,23 +209,28 @@ img.vertical-pic {
 
 /* Media Queries
 ------------------------------------------------------------------------ */
-/*widescreen*/ 
-    @media (min-aspect-ratio: 16/9) {
-      /*@media only screen and (min-width:1000px) { */
-      .left-half {
-      margin-left: 8rem;
-    }
-    .right-half {
-      margin-right: 8rem; 
-    }
-    .right-header {
-      margin-right: 10rem;      
-      }
-      .left-half img, .right-half img {
-        width: 50vw;
-    }
-    }
-    
+/*widescreen*/
+@media (min-aspect-ratio: 16/9) {
+
+  /*@media only screen and (min-width:1000px) { */
+  .left-half {
+    margin-left: 8rem;
+  }
+
+  .right-half {
+    margin-right: 8rem;
+  }
+
+  .right-header {
+    margin-right: 10rem;
+  }
+
+  .left-half img,
+  .right-half img {
+    width: 50vw;
+  }
+}
+
 
 
 @media (max-aspect-ratio: 9/8) {
@@ -249,6 +270,7 @@ img.vertical-pic {
     height: 0 !important;
     width: 0 !important;
   }
+
   .extra-margin-bottom {
     margin-bottom: 20rem;
   }
@@ -350,12 +372,12 @@ img.vertical-pic {
   .first {
     order: 1;
   }
-  
+
   /* fiks paddingen */
   section div:first-child {
     margin-right: 2rem;
   }
-  
+
   .right-header {
     padding: 2rem;
   }
@@ -364,29 +386,32 @@ img.vertical-pic {
     max-width: 100%;
     margin-top: 0;
   }
-  
+
   #woodpecker img {
     display: none;
   }
-  
+
   .right-pic img {
     margin-top: 1rem;
   }
-  
+
   .left-pic img,
   .right-pic img {
     width: 70vw;
   }
+
   h1 {
-   font-size: 8rem;
+    font-size: 8rem;
   }
-  p, li a {
+
+  p,
+  li a {
     font-size: 2rem;
   }
 }
 
 @media (max-aspect-ratio: 5/8) {
-  
+
   #nav-pic,
   #navTab-pic {
     display: none;
@@ -396,8 +421,10 @@ img.vertical-pic {
     display: block;
     bottom: -7%;
   }
-  p, li a {
+
+  p,
+  li a {
     font-size: 2.6rem;
   }
-  
+
 }
