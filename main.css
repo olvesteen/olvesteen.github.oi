@@ -185,9 +185,7 @@ img.vertical-pic {
 }
 .background-gradient {
   height: 100vh;
-
-  background-color: #E4C969;    
-
+  background-color: #E4C969;
    /* transition the background-color over 1s with a linear animation */
    transition: background-color 5s cubic-bezier(0.57, 0, 0.26, 1);;
 }

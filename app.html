@@ -7,12 +7,11 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body onload="activate()" style="background-color: rgb(222, 227, 240);">
+<body onload="activate()">
     <!--Navigation bar-->
     <div id="nav-placeholder">
 
     </div>
-
     <script>
         $(function () {
             $("#nav-placeholder").load("nav.html");
@@ -26,23 +25,49 @@
     <!--end of Navigation bar-->
 
     <section class="container">
-        <div class="left-half" style="padding-right: 0;">
+        <div class="left-half">
             <img style="z-index: 1;" src="img/app.svg">
         </div>
         <div class="right-header">
-            <h1 style="font-size: 3rem;">BirdsView's<br>analyse-<br>verktøy</h1>
+            <h1>app<br>og<br>web</h1>
         </div>
     </section>
-    <section class="container">
+    <section class="container whitespace">
         <div class="left-half">
-            <p>Lorem ipsum dorot amet ipsum dorot amet ipsum dorot amet ipsum dorot amet.</p>
+            <p>Som nevnt har jeg ansvaret for brukergrensesnittet til både app og webside i Birdsview. Appen skal snakke
+                direkte med scanneren og visualisere råte-data, som også blir presentert på websiden. I og med at appen
+                skal brukes på titalls stolper daglig, la jeg stor vekt på arbeidsflyt. Jeg har lagt opp appen slik at
+                energimontøren bruker så få klikk som mulig på å registrere informasjonen og kan innhente den i den
+                rekkefølgen som måtte ønskes. I tillegg har jeg fokusert mye på troverdighet og å gjøre råte-dataen
+                tillitsvekkende slik at energimontøren ikke skal føle et behov for å etterprøve målingen med mer
+                primitive metoder. Her ser dere en ønsket brukerreise:</p>
         </div>
         <div class="right-half">
-            <img src="img/waveDoodle.png">
+            <img src="img/app_tegneserie.jpg">
         </div>
     </section>
+    <section class="container whitespace">
+        <div class="left-half">
+            <img src="img/app_frames.png">
+        </div>
+        <div class="right-half">
+            <p>Etter utallige iterasjoner, like mange brukertester og mer hodebry enn jeg kunne ha drømt om, endte jeg
+                opp med et grensesnitt som jeg synes tilfredsstiller kravene. Appen er dog litt vanskelig å forklare med
+                bare et par bilder, så spør meg heller om å få prøve figma-prototypen neste gang du ser meg, så får jeg i 
+                tillegg brukertestet den enda en gang. </p>
+        </div>
+    </section>
+    <section class="container whitespace">
+            <div class="left-half last">
+                <p>Nettsiden er egentlig bare en større versjon av appen og benytter seg mye av hover-funksjon. 
+                    Den er også laget i Figma.  </p>
+            </div>
+            <div class="right-half first">
+                <img src="img/app_web.png" class="shadow">
+            </div>
+        </section>
     <div class="widescreen">
-        <img src="img/appWidescreen.svg">
+        <img src="img/appWidescreen.svg" style="background-color: #EBF0FE;">
     </div>
 
 </body>
