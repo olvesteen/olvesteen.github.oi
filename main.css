@@ -184,17 +184,19 @@ img.vertical-pic {
   max-height: 90vh;
   width: auto;
 }
+
 .background-gradient {
   height: 100vh;
   background-color: #E4C969;
-   /* transition the background-color over 1s with a linear animation */
-   transition: background-color 5s cubic-bezier(0.57, 0, 0.26, 1);;
+  /* transition the background-color over 1s with a linear animation */
+  transition: background-color 5s cubic-bezier(0.57, 0, 0.26, 1);
+  ;
 }
 
 /* the :hover that causes the background-color to change */
 .background-gradient:hover {
-   background-color: #F4D873;      
-  }
+  background-color: #F4D873;
+}
 
 /*# sourceMappingURL=main.css.map */
 
@@ -406,6 +408,9 @@ img.vertical-pic {
   p,
   li a {
     font-size: 2rem;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
   }
 }
 
