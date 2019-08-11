@@ -97,6 +97,7 @@ p {
   font-size: 16px;
   padding: 3rem;
   max-width: 700px;
+  max-height: 999999px;
 }
 
 .lighter {
@@ -385,7 +386,7 @@ img.vertical-pic {
     margin-top: 0;
   }
 
-  #woodpecker img {
+  #dipper img {
     display: none;
   }
 
@@ -422,7 +423,7 @@ img.vertical-pic {
 
   p,
   li a {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 
 }
