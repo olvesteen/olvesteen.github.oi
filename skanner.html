@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body onload="activate()" style="background-color: #EBF0FE;">
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+
+        function activate() {
+            var element = document.getElementById("skanner");
+            element.classList.add("active");
+        }
+    </script>
+    <!--end of Navigation bar-->
+
+    <section class="container">
+        <div class="left-half" style="margin-top: 0;">
+            <img style="z-index: 1;" src="img/skanner_transparent.png">
+        </div>
+        <div class="right-header">
+            <h1>håndholdt<br>skanner</h1>
+        </div>
+    </section>
+    <section class="container whitespace" style="padding-bottom: 0;">
+            <div class="left-pic last">
+                <img src="img/birdsview_mvp.gif" style=" max-height: 65vh;">
+            </div>
+            <div class="right-half first">
+                <p>Dette er Birdsviews håndholdte skanner, et minimum viable product (MVP).</p>
+            </div>
+        </section>
+    <section class="container whitespace" style="background-color: #FFF;">
+            <div class="left-half">
+                <p> I forbindelse med faget "Industriprosjekt" fikk vi inn to ekstra designere i Birdsview. 
+                    Den ene av dem, Katinka Bøvre, startet prosessen med å lage en håndholdt radarskanner. 
+                    Jeg tok opp tråden fra hennes konsept og videreutviklet det. Jeg bevarte stroppen og de fire hjulene. 
+                </p>
+            </div>
+            <div class="right-half">
+                <img src="img/skanner_katinka.jpg" class="vertical-pic">
+            </div>
+        </section>
+    <section class="container whitespace" style="background-color: #FFF;">
+        <div class="left-half last">
+            <p>I utgangspunktet høres oppgaven «lag en håndholdt skanner» ikke så kompleks ut, hvis man fjerner det 
+                tekniske aspektet. Likevel er det overraskende mye å tenke på. For det første må man designe for trestoler 
+                med ulik størrelse. Stolpene varierer fra 18cm til 55cm i diameter. Det er overraskende stor forskjell. For 
+                det andre er det veldig viktig at komponenten med radaren er i fullstendig kontakt med treoverflaten mens den 
+                nner.  For det tredje må enheten til enhver tid måle hvor langt den har skannet. Dette er blant de viktigste 
+                punktene i problemstillingen, og da har jeg ikke nevnt brukskravene enda.  
+            </p>
+        </div>
+        <div class="right-half first">
+            <img src="img/skanner_skisser.jpg">
+        </div>
+    </section>
+    <section class="container whitespace" style="background-color: #FFF;">
+        <div class="left-half">
+            <img src="img/skanner_skissemodeller.jpg">
+        </div>
+        <div class="right-half">
+            <p>Stroppen løser kravet om at radarkomponenten må være inntil trestolpen. Den gjør det enkelt for brukeren å 
+                føre skanneren rundt stolpen under en skann. Ingen trestolper er dog fullstendig 
+                sirkulære. Derfor er stroppen elastisk for å unngå at skanneren kiler seg fast. Dette gjør det også enklere 
+                å feste skanneren på stolpen uten å måtte justere stroppen. Radarkomponenten er i tillegg fjørbelastet slik 
+                den ligger inntil stolpen på tross av ujevnheter. Tannhjulene på toppen er koblet til en enkoder 
+                (sirkulær skritteller) slik at om ett av hjulene ikke er i kontakt med stolpen, vil det andre fremdeles sørge 
+                for at enkoderen «teller» hvor langt den har kommet.   
+            </p>
+        </div>
+    </section>
+    <section class="container whitespace">
+            <div class="left-half last">
+                <p>Formen er inspirert av dagens hybridkameraer. </p>
+            </div>
+            <div class="right-half first">
+                <img src="img/skanner_longPole.jpg" class="vertical-pic">
+            </div>
+        </section>
+        <section class="container whitespace">
+                <div class="left-half">
+                    <img src="img/skanner_close.jpg" class="shadow">
+                </div>
+                <div class="right-half">
+                        <p>Knappen starter skannen.</p>
+                    </div>
+            </section>
+            <section class="container whitespace">
+                    <div class="left-half last">
+                            <p>Enkel festemekanisme.</p>
+                        </div>
+                    <div class="right-half first">
+                        <img src="img/skanner_clips.jpg" class="shadow">
+                    </div>
+                </section>
+                <section class="container whitespace">
+                        <div class="left-half">
+                            <img src="img/skanner_sun.jpg" class="shadow">
+                        </div>
+                    </section>
+    <div class="widescreen">
+        <img src="img/skanner_side.jpg">
+    </div>
+
+</body>
+
+</html>

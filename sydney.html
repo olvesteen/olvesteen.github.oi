@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body onload="activate()">
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+
+        function activate() {
+            var element = document.getElementById("sydney");
+            element.classList.add("active");
+        }
+    </script>
+    <!--end of Navigation bar-->
+
+    <section class="container">
+        <div class="left-half">
+            <img src="img/sydney_opera.jpg">
+        </div>
+        <div class="right-header">
+            <h1>sydney<br>opera<br>house</h1>
+        </div>
+    </section>
+    <section class="container whitespace">
+        <div class="left-half">
+            <p>På midt fjerde år i utdanningsløpet, utvekslet jeg til Sydney. Ett av fagene het 
+                Integrated Building Design. Det handlet om hvordan arkitekten og ingeniøren kan utveksle ekspertise for å 
+                skape en bygning som ingen av dem kunne ha laget på egenhånd. En av oppgavene i faget var å studere
+                 Australias desidert mest kjente byggikon. 
+                    
+            </p>
+        </div>
+        <div class="right-half">
+            <img src="img/sydney_section.jpg">
+        </div>
+    </section>
+    <section class="container whitespace">
+        <div class="left-half">
+            <img src="img/sydney_arch.jpg" class="vertical-pic">
+        </div>
+        <div class="right-half">
+            <p>Sydney Opera House er et ekstremt komplekts bygg. Visuelt sett, men mest med tanke på konstruksjon. 
+                Hvordan ble det bygget? Hvorfor faller det ikke sammen? For å besvare disse spørsmålene må man helst 
+                ha en utdannelse i konstruksjonsteknikk eller lignende. Jeg ville lage en interaktiv sekvens av bilder 
+                som forklarer i enkelthet hvordan ikonet ble bygget. Dermed kan alle som har gått og klødd seg i hodet 
+                på grunn av disse spørsmålene, med letthet finne svarene. Sjekk ut sekvensen <a href="https://www.figma.com/proto/B3J2PJpQJNhQNOwicjlMGA/Sydney-Opera-House?node-id=10%3A15&viewport=-7595%2C680%2C0.25&scaling=contain" 
+                target="_blank">
+                her</a>. (Laget i Figma)  
+            </p>
+        </div>
+    </section>
+    <section class="container whitespace">
+            <div class="left-half last">
+                <p>Her er et skjermbilde av resultatet.  
+                </p>
+            </div>
+            <div class="right-half first">
+                <img src="img/sydney_complete.svg" class="shadow">
+            </div>
+        </section>
+    <div class="widescreen">
+        <img src="img/sydney_roof.jpg">
+    </div>
+
+</body>
+
+</html>

@@ -6,6 +6,16 @@
 body {
   height: 100vh;
 }
+/*.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('img/loading.gif') 50% 50% no-repeat;
+  opacity: 1;
+}*/
 
 img.logo {
   max-height: 90vh;
@@ -58,7 +68,7 @@ li a {
 }
 
 a.homeAndAbout {
-  color: #888;
+  color: rgb(231, 218, 168);
 }
 
 a.active {
@@ -76,7 +86,8 @@ nav {
   z-index: 2;
 }
 
-/*Styleing for enkeltsider*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 h1,
 p,
@@ -85,20 +96,19 @@ li a {
 }
 
 h1 {
-  font-weight: lighter;
+  font-family: 'Raleway', sans-serif;
   font-size: 5rem;
   color: #464646;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
 p {
   color: #464646;
-  font-size: 16px;
+  font-size: 19px;
   padding: 3rem;
   max-width: 700px;
   max-height: 999999px;
 }
+/*Styleing for enkeltsider*/
 
 .lighter {
   color: lightgray;
@@ -184,12 +194,15 @@ img.vertical-pic {
   max-height: 90vh;
   width: auto;
 }
+#slim {
+  max-width: 30vw;
+}
 
 .background-gradient {
   height: 100vh;
   background-color: #E4C969;
   /* transition the background-color over 1s with a linear animation */
-  transition: background-color 5s cubic-bezier(0.57, 0, 0.26, 1);
+  transition: background-color 5s cubic-bezier(0.1, 0, 0.25, 1);
   ;
 }
 
@@ -213,7 +226,6 @@ img.vertical-pic {
 /*widescreen*/
 @media (min-aspect-ratio: 16/9) {
 
-  /*@media only screen and (min-width:1000px) { */
   .left-half {
     margin-left: 8rem;
   }
@@ -230,11 +242,18 @@ img.vertical-pic {
   .right-half img {
     width: 50vw;
   }
+  #slim {
+    max-width: 25vw;
+  }
 }
 
 
 
 @media (max-aspect-ratio: 9/8) {
+
+  .background-gradient {
+    background-color:#F4D873;
+  }
 
   .container {
     flex-direction: column;
@@ -276,15 +295,6 @@ img.vertical-pic {
     margin-bottom: 20rem;
   }
 
-  /*
-  img.zoom {
-    width: 190vw;
-
-  }
-  div.zoom {
-    object-fit: cover; 
-  }
-*/
   #nav-pic,
   #navMob-pic {
     display: none;
@@ -293,6 +303,9 @@ img.vertical-pic {
   #navTab-pic {
     display: block;
     bottom: -5%;
+  }
+  #slim {
+    max-width: 50vw;
   }
 
   /* Hide the navigation menu by default */
@@ -312,20 +325,20 @@ img.vertical-pic {
   /* Stylinf the toggle lable */
   .toggle {
     display: block;
-    font-size: 17px;
+    font-size: 16px;
     text-decoration: none;
-    font-family: roboto;
+    font-family: 'Roboto';
     border: none;
     color: white;
     float: right;
-    background-image: url("img/nav_hamburger.svg");
+    background-image: url("img/nav_hamburger_yellow.svg");
     background-position: center;
     /*Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
     background-size: contain;
-    padding: 3% 8%;
-    margin: 2%;
+    padding: 4% 5%;
+    margin: 1%;
   }
 
   /* Display Dropdown when clicked on Parent Lable */
@@ -430,5 +443,7 @@ img.vertical-pic {
   li a {
     font-size: 3rem;
   }
-
+  #slim {
+    max-width: 70vw;
+  }
 }
