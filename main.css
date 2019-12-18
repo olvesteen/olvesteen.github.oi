@@ -194,6 +194,19 @@ section div:first-child {
   box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
+.shadow-left-white, .shadow-right-white {
+  -webkit-box-shadow: 0px 0px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+}
+.shadow-left-red, .shadow-right-red {
+  -webkit-box-shadow: 0px 0px #770002;
+  -moz-box-shadow: 0px 0px #770002;
+  box-shadow: 0px 0px #770002;
+  transition: 0.5s;
+}
+
 .shadow-right-gray:hover {
   -webkit-box-shadow: 130px 135px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 130px 130px rgba(0, 0, 0, 0.5);
@@ -213,6 +226,26 @@ section div:first-child {
   -webkit-box-shadow: -160px 160px rgba(255, 200, 0, 0.5);
   -moz-box-shadow: -160px 160px rgba(255, 200, 0, 0.5);
   box-shadow: -160px 160px rgba(255, 200, 0, 0.5);
+}
+.shadow-right-white:hover {
+  -webkit-box-shadow: 130px 135px rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: 130px 130px rgba(255, 255, 255, 0.7);
+  box-shadow: 100px 140px rgba(255, 255, 255, 0.7);
+}
+.shadow-left-white:hover {
+  -webkit-box-shadow: -160px 160px rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: -160px 160px rgba(255, 255, 255, 0.7);
+  box-shadow: -160px 160px rgba(255, 255, 255, 0.7);
+}
+.shadow-left-red:hover {
+  -webkit-box-shadow: -50px 50px #770002;
+  -moz-box-shadow: -50px 50px #770002;
+  box-shadow: -50px 50px #770002;
+}
+.shadow-right-red:hover {
+  -webkit-box-shadow: 50px 50px #770002;
+  -moz-box-shadow: 50px 50px #770002;
+  box-shadow: 50px 50px #770002;
 }
 .borderline {
   border: 20px solid rgba(255, 200, 0, 0.5);
