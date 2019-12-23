@@ -361,7 +361,7 @@
 
 							// Recurse if we're merging plain objects or arrays
 							if (deep && copy && (jQuery.isPlainObject(copy) || (copyIsArray = jQuery.isArray(
-								copy)))) {
+									copy)))) {
 								if (copyIsArray) {
 									copyIsArray = false;
 									clone = src && jQuery.isArray(src) ? src : [];
@@ -2027,7 +2027,7 @@
 								(excess = tokenize(unquoted, true)) &&
 								// advance to the next closing parenthesis
 								(excess = unquoted.indexOf(")", unquoted.length - excess) - unquoted.length)
-								) {
+							) {
 
 								// excess is a negative index
 								match[0] = match[0].slice(0, excess);
@@ -2284,11 +2284,11 @@
 									if ((elemLang = documentIsHTML ?
 											elem.lang :
 											elem.getAttribute("xml:lang") || elem.getAttribute("lang")
-											)) {
+										)) {
 
 										elemLang = elemLang.toLowerCase();
 										return elemLang === lang || elemLang.indexOf(lang + "-") ===
-										0;
+											0;
 									}
 								} while ((elem = elem.parentNode) && elem.nodeType === 1);
 								return false;
@@ -4308,7 +4308,7 @@
 					if (!arguments.length) {
 						if (elem) {
 							hooks = jQuery.valHooks[elem.type] || jQuery.valHooks[elem.nodeName
-						.toLowerCase()];
+								.toLowerCase()];
 
 							if (hooks && "get" in hooks && (ret = hooks.get(elem, "value")) !== undefined) {
 								return ret;
@@ -8063,7 +8063,7 @@
 						callbackContext = s.context || s,
 						// Context for global events is callbackContext if it is a DOM node or jQuery collection
 						globalEventContext = s.context && (callbackContext.nodeType || callbackContext
-						.jquery) ?
+							.jquery) ?
 						jQuery(callbackContext) :
 						jQuery.event,
 						// Deferreds
@@ -8107,7 +8107,7 @@
 								var lname = name.toLowerCase();
 								if (!state) {
 									name = requestHeadersNames[lname] = requestHeadersNames[lname] ||
-									name;
+										name;
 									requestHeaders[name] = value;
 								}
 								return this;
@@ -10003,7 +10003,7 @@
 	</script>
 </head>
 
-<body onload="activate()" style="background-color: #DAF1D7">
+<body onload="activate()" style="background-color: #fffbdd">
 	<!--Navigation bar-->
 	<div id="nav-placeholder">
 
@@ -10015,82 +10015,108 @@
 		});
 
 		function activate() {
-			var element = document.getElementById("lytt");
+			var element = document.getElementById("spenn");
 			element.classList.add("active");
 		}
 	</script>
 	<!--end of Navigation bar-->
 	<section class="container">
 		<div class="left-half">
-			<img src="img/lytt_held.png" alt="Woopsi, det skulle visst vært et bilde her.">
+			<img src="img/spenn_front.jpg" alt="Woopsi, det skulle visst vært et bilde her.">
 		</div>
 		<div class="right-header">
-			<h1>lytt</h1>
+			<h1>spænn</h1>
 		</div>
 	</section>
 	<section class="container whitespace">
-			<div class="left-half last">
-				<p>Den ene oppgaven i designfaget på UNSW i Australia var å lage en pyntegjenstand for kroppen. 
-					Vi skulle la oss inspirere av naturen og biomimicry. 
-					Jeg hentet min inspirasjon fra en naturens mange fasinerende og intrikate strukturer; stilken. 
-					Plantestilken er full av tuneller for vanntransport og lager et meget interessant estetisk uttrykk.
-				</p>
-			</div>
-			<div class="right-half first">
-				<img src="img/lytt_micro.jpg" class="vertical-pic shadow" alt="Woopsi, det skulle visst vært et bilde her.">
-			</div>
-		</section>
+		<div class="left-half last">
+			<p>
+					I faget Design Studio 3 på UNSW i Australia skulle vi designe et arbeidslys for en hypotetisk oppstartsbedrift. 
+					Designbriefen  gav stikkord som “lokalt produsert”, “håndtverk”, “naturlige materialer”, “intimt og koselig”, 
+					“rik og lagdelt”, “leken”.	
+				For at et arbeidslys skal fungere best mulig må det ikke være blendende, 
+					ikke stå i veien og det må gi direkte lys til bordplaten.
+			</p>
+		</div>
+		<div class="right-half first">
+			<img src="img/spenn_problem.png" alt="Woopsi, det skulle visst vært et bilde her." class="vertical-pic">
+		</div>
+	</section>
 	<section class="container whitespace">
 		<div class="left-half">
-			<img src="img/lytt_story.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+			<img src="img/spenn_inspo.jpg" alt="Woopsi, det skulle visst vært et bilde her.">
 		</div>
 		<div class="right-half">
-			<p>En historie om beundring.
+			<p> Jeg hentet inspo fra det enkle formspråket til Koseonmi Heenajeons salkrakk og fra kompleksiteten til 
+				Filip Šlapals trådinstallasjon.
+			</p>
+		</div>
+	</section>
+	<section class="container">
+		<div class="left-half">
+			<p style="max-width: 1000px;">Spænn er en historie om hvordan man kan bruke det strukturelle til å skape det
+				visuelle.
+			</p>
+		</div>
+	</section>
+	<section>
+		<div class="right-half">
+			<img src="img/spenn_historie.png" alt="Woopsi, det skulle visst vært et bilde her." style="width: 90vw;">
+		</div>
+	</section>
+
+	<section class="container whitespace">
+		<div class="left-half" style="margin-left:0;">
+			<img src="img/spenn_prosess.jpg" alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+		<div class="right-half">
+			<p>Lampen består av fire hoveddeler: Bjørkefineren (0,5mm), tråden, de formstøpte takplatene og lampedelen. 
 			</p>
 		</div>
 	</section>
 	<section class="container whitespace">
 		<div class="left-half last">
-				<p>
-					Formen tar form. Jeg benyttet laserkutter for det intrekate møsteret og kuttet i 3mm akryl. 
-				</p>
+			<p>
+				Det komplekse trådmønsteret spiller på lag med den simple bjørkefineren. 
+			</p>
 		</div>
 		<div class="right-half first">
-			<img src="img/lytt_shape.jpg"  alt="Woopsi, det skulle visst vært et bilde her.">
+			<img src="img/spenn_pattern.jpg" alt="Woopsi, det skulle visst vært et bilde her."
+				class="vertical-pic shadow">
 		</div>
 	</section>
 	<section class="container whitespace">
-			<div class="left-half">
-				<img src="img/lytt_mould.jpg" class="vertical-pic" alt="Woopsi, det skulle visst vært et bilde her.">
-			</div>
-			<div class="right-half">
-					<p>Jeg lagde en silikonstøpeform av den laserkuttede delen og helte i en gipsblanding. 
-						Det var en utfordring å få helt korrekt blandingsforhold, spesielt når jeg tilsatte maling. 
-						Dermed ble det noen fiaskoer.
-					</p>
-				</div>
-		</section>
-	<section class="container whitespace">
 			<div class="left-half last">
-					<p>
-						Og så fikk jeg prøve meg som modell.<br>
-						Foto: Ole Hovland Rosenlund
-					</p>
+				<p>
+					Takplatene “mater” ut tråden fra en linje som gradvis endres til en sirkel når den treffer bjørkefineren. 
+				</p>
 			</div>
 			<div class="right-half first">
-				<img src="img/lytt_longboard.jpg" class="vertical-pic shadow" alt="Woopsi, det skulle visst vært et bilde her.">
+				<img src="img/spenn_mould.jpg" alt="Woopsi, det skulle visst vært et bilde her."
+					class="vertical-pic shadow">
 			</div>
 		</section>
 		<section class="container whitespace">
-				<div class="left-half">
-					<img src="img/lytt_close.jpg" class="vertical-pic shadow" alt="Woopsi, det skulle visst vært et bilde her.">
+				<div class="left-half last">
+				
 				</div>
-				<div class="right-half">
-						
-					</div>
+				<div class="right-half first">
+					<img src="img/spenn_above.jpg" alt="Woopsi, det skulle visst vært et bilde her."
+						class="vertical-pic shadow">
+				</div>
 			</section>
+	<section class="container whitespace">
+		<div class="left-half last">
+			<p> Bjørkefineren er tynn nok til å skape et skyggespill fra tråden på innsiden. 
+			</p>
+		</div>
+		<div class="right-half first">
+			<img src="img/spenn_close.jpg" alt="Woopsi, det skulle visst vært et bilde her."
+				class="vertical-pic shadow">
+		</div>
+	</section>
 	<div class="widescreen">
-		<img src="img/lytt_grafisk.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+		<img src="img/spenn_wide.jpg" alt="Woopsi, det skulle visst vært et bilde her.">
 	</div>
 
 </body>
