@@ -6,6 +6,7 @@
 body {
   height: 100vh;
 }
+
 /*.loader {
   position: fixed;
   left: 0px;
@@ -16,6 +17,58 @@ body {
   background: url('img/loading.gif') 50% 50% no-repeat;
   opacity: 1;
 }*/
+
+/* filter button*/
+
+.filterDiv {
+  color: #666666;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  color: #fff;
+}
+
+/* Style the buttons */
+.btn {
+  z-index: 3;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  background: #464646;
+  padding: 20px;
+  border-radius: 50px;
+  display: block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  position: absolute;
+  right: 20px;
+  box-shadow: -16px 16px 35px rgba(0, 0, 0, 0.5);
+}
+
+.btnAlle {
+  top: 20px;
+}
+
+.btnProduct {
+  top: 85px;
+}
+
+.btnGraphic {
+  top: 150px;
+}
+
+/* change shawow on mouse-over */
+.btn:hover {
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* change shadow to the active button */
+.btn.active {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  ;
+}
 
 img.logo {
   max-height: 90vh;
@@ -109,6 +162,7 @@ p {
   max-width: 700px;
   max-height: 999999px;
 }
+
 /*Styleing for enkeltsider*/
 
 .lighter {
@@ -171,36 +225,45 @@ section div:first-child {
   width: 40vw;
   object-fit: contain;
 }
+
 .shadow {
   -webkit-box-shadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
   box-shadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
 }
+
 .shadow-r {
   -webkit-box-shadow: 160px 160px 100px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 160px 160px 100px rgba(0, 0, 0, 0.3);
   box-shadow: 160px 160px 100px rgba(0, 0, 0, 0.3);
 }
 
-.shadow-left, .shadow-right  {
+.shadow-left,
+.shadow-right {
   -webkit-box-shadow: 0px 0px rgba(255, 200, 0, 0.5);
   -moz-box-shadow: 0px 0px rgba(255, 200, 0, 0.5);
   box-shadow: 0px 0px rgba(255, 200, 0, 0.5);
   transition: 0.5s;
 }
-.shadow-left-gray, .shadow-right-gray {
+
+.shadow-left-gray,
+.shadow-right-gray {
   -webkit-box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
-.shadow-left-white, .shadow-right-white {
+
+.shadow-left-white,
+.shadow-right-white {
   -webkit-box-shadow: 0px 0px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0px 0px rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px rgba(255, 255, 255, 0.5);
   transition: 0.5s;
 }
-.shadow-left-red, .shadow-right-red {
+
+.shadow-left-red,
+.shadow-right-red {
   -webkit-box-shadow: 0px 0px #770002;
   -moz-box-shadow: 0px 0px #770002;
   box-shadow: 0px 0px #770002;
@@ -212,41 +275,49 @@ section div:first-child {
   -moz-box-shadow: 130px 130px rgba(0, 0, 0, 0.5);
   box-shadow: 130px 130px rgba(0, 0, 0, 0.5);
 }
+
 .shadow-left-gray:hover {
   -webkit-box-shadow: -160px 160px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -160px 160px rgba(0, 0, 0, 0.5);
   box-shadow: -160px 160px rgba(0, 0, 0, 0.5);
 }
+
 .shadow-right:hover {
   -webkit-box-shadow: 130px 135px rgba(255, 200, 0, 0.5);
   -moz-box-shadow: 130px 130px rgba(255, 200, 0, 0.5);
   box-shadow: 100px 140px rgba(255, 200, 0, 0.5);
 }
+
 .shadow-left:hover {
   -webkit-box-shadow: -160px 160px rgba(255, 200, 0, 0.5);
   -moz-box-shadow: -160px 160px rgba(255, 200, 0, 0.5);
   box-shadow: -160px 160px rgba(255, 200, 0, 0.5);
 }
+
 .shadow-right-white:hover {
   -webkit-box-shadow: 130px 135px rgba(255, 255, 255, 0.7);
   -moz-box-shadow: 130px 130px rgba(255, 255, 255, 0.7);
   box-shadow: 100px 140px rgba(255, 255, 255, 0.7);
 }
+
 .shadow-left-white:hover {
   -webkit-box-shadow: -160px 160px rgba(255, 255, 255, 0.7);
   -moz-box-shadow: -160px 160px rgba(255, 255, 255, 0.7);
   box-shadow: -160px 160px rgba(255, 255, 255, 0.7);
 }
+
 .shadow-left-red:hover {
   -webkit-box-shadow: -50px 50px #770002;
   -moz-box-shadow: -50px 50px #770002;
   box-shadow: -50px 50px #770002;
 }
+
 .shadow-right-red:hover {
   -webkit-box-shadow: 50px 50px #770002;
   -moz-box-shadow: 50px 50px #770002;
   box-shadow: 50px 50px #770002;
 }
+
 .borderline {
   border: 20px solid rgba(255, 200, 0, 0.5);
 }
@@ -260,6 +331,7 @@ section div:first-child {
 img.vertical-pic {
   max-width: 35vw;
 }
+
 #slim {
   max-width: 30vw;
 }
@@ -308,17 +380,18 @@ img.vertical-pic {
   .right-half img {
     width: 50vw;
   }
+
   #slim {
     max-width: 25vw;
   }
 }
 
 
-
+/*ipad*/
 @media (max-aspect-ratio: 9/8) {
 
   .background-gradient {
-    background-color:#F4D873;
+    background-color: #F4D873;
   }
 
   .container {
@@ -341,6 +414,7 @@ img.vertical-pic {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
   img.vertical-pic {
     max-width: 100%;
   }
@@ -373,6 +447,7 @@ img.vertical-pic {
     display: block;
     bottom: -5%;
   }
+
   #slim {
     max-width: 50vw;
   }
@@ -381,7 +456,7 @@ img.vertical-pic {
   /* Also hide the  */
   .menu {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     background-color: #464646;
     width: 100vw;
@@ -494,8 +569,27 @@ img.vertical-pic {
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
   }
+   /* Style the buttons for phone */
+   .btn {
+    padding: 25px;
+    font-size: 25px;
+    border-radius: 45px;
+  }
+
+  .btnAlle {
+    top: 20px;
+  }
+
+  .btnProduct {
+    top: 105px;
+  }
+
+  .btnGraphic {
+    top: 190px;
+  }
 }
 
+/* phone size */
 @media (max-aspect-ratio: 5/8) {
 
   #nav-pic,
@@ -512,7 +606,26 @@ img.vertical-pic {
   li a {
     font-size: 3rem;
   }
+
   #slim {
     max-width: 70vw;
+  }
+  /* Style the buttons for phone */
+  .btn {
+    padding: 45px;
+    font-size: 40px;
+    border-radius: 85px;
+  }
+
+  .btnAlle {
+    top: 20px;
+  }
+
+  .btnProduct {
+    top: 175px;
+  }
+
+  .btnGraphic {
+    top: 335px;
   }
 }
