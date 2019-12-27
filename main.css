@@ -231,11 +231,26 @@ section div:first-child {
   -moz-box-shadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
   box-shadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
 }
+.shadow-low {
+  -webkit-box-shadow: -40px 40px 40px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
+  box-shadow: -40px 40px 50px rgba(0, 0, 0, 0.3);
+}
 
 .shadow-r {
   -webkit-box-shadow: 160px 160px 100px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 160px 160px 100px rgba(0, 0, 0, 0.3);
   box-shadow: 160px 160px 100px rgba(0, 0, 0, 0.3);
+}
+.shadow-up {
+  -webkit-box-shadow: -160px -160px 100px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -160px -160px 100px rgba(0, 0, 0, 0.3);
+  box-shadow: -40px -40px 40px rgba(0, 0, 0, 0.3);
+}
+.shadow-up-r {
+  -webkit-box-shadow: 160px -160px 100px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 160px -160px 100px rgba(0, 0, 0, 0.3);
+  box-shadow: 40px -40px 30px rgba(0, 0, 0, 0.3);
 }
 
 .shadow-left,
