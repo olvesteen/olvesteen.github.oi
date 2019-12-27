@@ -21,7 +21,7 @@ body {
 /* filter button*/
 
 .filterDiv {
-  color: #666666;
+  color: #464646;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -231,6 +231,7 @@ section div:first-child {
   -moz-box-shadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
   box-shadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
 }
+
 .shadow-low {
   -webkit-box-shadow: -40px 40px 40px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
@@ -242,11 +243,13 @@ section div:first-child {
   -moz-box-shadow: 160px 160px 100px rgba(0, 0, 0, 0.3);
   box-shadow: 160px 160px 100px rgba(0, 0, 0, 0.3);
 }
+
 .shadow-up {
   -webkit-box-shadow: -160px -160px 100px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: -160px -160px 100px rgba(0, 0, 0, 0.3);
   box-shadow: -40px -40px 40px rgba(0, 0, 0, 0.3);
 }
+
 .shadow-up-r {
   -webkit-box-shadow: 160px -160px 100px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 160px -160px 100px rgba(0, 0, 0, 0.3);
@@ -471,7 +474,7 @@ img.vertical-pic {
   /* Also hide the  */
   .menu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     background-color: #464646;
     width: 100vw;
@@ -584,8 +587,9 @@ img.vertical-pic {
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
   }
-   /* Style the buttons for phone */
-   .btn {
+
+  /* Style the buttons for phone */
+  .btn {
     padding: 25px;
     font-size: 25px;
     border-radius: 45px;
@@ -625,6 +629,7 @@ img.vertical-pic {
   #slim {
     max-width: 70vw;
   }
+
   /* Style the buttons for phone */
   .btn {
     padding: 45px;
