@@ -596,15 +596,18 @@ img.vertical-pic {
   }
 
   .btnAlle {
-    top: 20px;
+    /*top: 20px;*/
+    top: -500px;
   }
 
   .btnProduct {
-    top: 105px;
+    /*top: 105px;*/
+    top: -500px;
   }
 
   .btnGraphic {
-    top: 190px;
+    /*top: 190px;*/
+    top: -500px;
   }
 }
 
@@ -638,14 +641,17 @@ img.vertical-pic {
   }
 
   .btnAlle {
-    top: 20px;
+    /*top: 20px;*/
+    top: -500px;
   }
 
   .btnProduct {
-    top: 175px;
+    /*top: 175px;*/
+    top: -500px;
   }
 
   .btnGraphic {
-    top: 335px;
+    /*top: 335px;*/
+    top: -500px;
   }
 }
