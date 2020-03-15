@@ -478,7 +478,10 @@ img.vertical-pic {
     right: 0;
     bottom: 0;
     padding: 6em 3em;
+<<<<<<< Updated upstream
     z-index: 9;
+=======
+>>>>>>> Stashed changes
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -518,6 +521,12 @@ img.vertical-pic {
   input[type=checkbox] {
     display: none;
   }
+<<<<<<< Updated upstream
+=======
+  input[type=checkbox]:checked + nav {
+    z-index: 6;
+  }
+>>>>>>> Stashed changes
   input[type=checkbox]:checked ~ #menu {
     visibility: visible;
     background: #464646;
