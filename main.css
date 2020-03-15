@@ -68,14 +68,6 @@ body {
 }
 
 /* change shadow to the active button */
-img.logo {
-  max-height: 90vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-}
-
 .portrait {
   margin-top: 5vh;
 }
@@ -478,10 +470,7 @@ img.vertical-pic {
     right: 0;
     bottom: 0;
     padding: 6em 3em;
-<<<<<<< Updated upstream
     z-index: 9;
-=======
->>>>>>> Stashed changes
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -521,12 +510,6 @@ img.vertical-pic {
   input[type=checkbox] {
     display: none;
   }
-<<<<<<< Updated upstream
-=======
-  input[type=checkbox]:checked + nav {
-    z-index: 6;
-  }
->>>>>>> Stashed changes
   input[type=checkbox]:checked ~ #menu {
     visibility: visible;
     background: #464646;
@@ -551,7 +534,6 @@ img.vertical-pic {
     -webkit-box-shadow: -20px 20px 30px black;
             box-shadow: -20px 20px 30px black;
   }
-  /* Display Dropdown when clicked on Parent Lable */
   /* Change menu item's width to 100% */
   ul {
     padding: 0;
@@ -573,6 +555,12 @@ img.vertical-pic {
   }
   p {
     padding: 0;
+  }
+  #home {
+    padding-top: 100px;
+  }
+  #lytt {
+    padding-bottom: 100px;
   }
   .left-half, .right-half {
     -webkit-box-flex: 1;
