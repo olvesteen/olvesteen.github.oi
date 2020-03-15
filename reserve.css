@@ -366,12 +366,11 @@ img.vertical-pic {
 }
 /* ----------------------- Mobile dropdown menu ------------------------ */
 /* Hide checkbox */
-[id^=overlay-input] {
-  display: none;
-}
-
+/*.overlay-button, [id^=overlay-input] {
+    display: none;
+  }*/
 /* Media Queries
------------------------------------------------------------------------- */
+  ------------------------------------------------------------------------ */
 /*widescreen*/
 @media (min-aspect-ratio: 16 / 9) {
   .left-half {
@@ -447,202 +446,243 @@ img.vertical-pic {
   #menu {
     height: 100vh;
     width: 100vw;
-    /*transition: all 0.3s ease-in-out;
-    background: transparent;*/
+    background: #464646;
+    z-index: 2;
     visibility: hidden;
   }
   #menu.active {
     visibility: visible;
+    color: #E4C969;
   }
-  #menu ul {
-    height: 100vh;
-  }
-  @keyframes bugfix {
-    from {
-      padding: 0;
-    }
-    to {
-      padding: 0;
-    }
-  }
-  @-webkit-keyframes bugfix {
-    from {
-      padding: 0;
-    }
-    to {
-      padding: 0;
-    }
-  }
-  #overlay-button {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 6em 3em;
-    z-index: 9;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
-  #overlay-button span {
-    height: 8px;
-    width: 70px;
-    /*border-radius: 4px;*/
-    background-color: #464646;
-    position: relative;
-    display: block;
-    -webkit-box-shadow: -30px 40px 30px black;
-            box-shadow: -30px 40px 30px black;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-  }
-  #overlay-button span:before {
-    top: -20px;
-    visibility: visible;
-  }
-  #overlay-button span:after {
-    top: 20px;
-  }
-  #overlay-button span:before, #overlay-button span:after {
-    height: 8px;
-    width: 70px;
-    /*border-radius: 4px;*/
-    background-color: #464646;
-    -webkit-box-shadow: -30px 40px 30px black;
-            box-shadow: -30px 40px 30px black;
-    position: absolute;
-    content: "";
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-  }
-  input[type=checkbox] {
-    display: none;
-  }
-  input[type=checkbox]:checked ~ #menu {
-    visibility: visible;
-    background: #464646;
-  }
-  input[type=checkbox]:checked ~ #overlay-button span {
-    background: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  input[type=checkbox]:checked ~ #overlay-button span:before {
-    -webkit-transform: rotate(45deg) translate(14px, 14px);
-            transform: rotate(45deg) translate(14px, 14px);
-    opacity: 1;
-    background-color: #fddb79;
-    -webkit-box-shadow: -20px 20px 30px black;
-            box-shadow: -20px 20px 30px black;
-  }
-  input[type=checkbox]:checked ~ #overlay-button span:after {
-    -webkit-transform: rotate(-45deg) translate(14px, -14px);
-            transform: rotate(-45deg) translate(14px, -14px);
-    background-color: #fddb79;
-    -webkit-box-shadow: -20px 20px 30px black;
-            box-shadow: -20px 20px 30px black;
-  }
-  /* Display Dropdown when clicked on Parent Lable */
-  /* Change menu item's width to 100% */
-  ul {
-    padding: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  nav ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  p {
+}
+
+/*#menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      z-index: -1;
+    }*/
+@keyframes bugfix {
+  from {
     padding: 0;
   }
-  .left-half, .right-half {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    margin: 2rem;
+  to {
+    padding: 0;
   }
-  .left-half img, .right-half img {
-    -o-object-fit: contain;
-       object-fit: contain;
-    width: 100%;
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
   }
-  div {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-transition: max-height 2s;
-    transition: max-height 2s;
+  to {
+    padding: 0;
   }
-  .last {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .first {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  /* fiks paddingen */
-  section div:first-child {
-    margin-right: 2rem;
-  }
-  .right-header {
-    padding: 2rem;
-  }
-  .widescreen img {
-    max-width: 100%;
-    margin-top: 0;
-  }
-  #dipper img {
-    display: none;
-  }
-  .right-pic img {
-    margin-top: 1rem;
-  }
-  .left-pic img, .right-pic img {
-    width: 70vw;
-  }
-  h1 {
-    font-size: 8rem;
-  }
-  p, li a {
-    font-size: 2rem;
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-  }
-  .btn {
-    padding: 25px;
-    font-size: 25px;
-    border-radius: 45px;
-  }
-  .btnAlle {
-    /*top: 20px;*/
-    top: -500px;
-    bottom: unset;
-  }
-  .btnProduct {
-    /*top: 105px;*/
-    top: -500px;
-    bottom: unset;
-  }
-  .btnGraphic {
-    /*top: 190px;*/
-    top: -500px;
-    bottom: unset;
-  }
+}
+
+#overlay-button {
+  position: absolute;
+  right: 2em;
+  bottom: 3em;
+  padding: 36px 28px;
+  z-index: 9;
+  /*cursor: pointer;*/
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#overlay-button span {
+  height: 8px;
+  width: 70px;
+  border-radius: 4px;
+  background-color: #464646;
+  position: relative;
+  display: block;
+  -webkit-box-shadow: -15px 20px 30px rgba(0, 0, 0, 0.7);
+          box-shadow: -15px 20px 30px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#overlay-button span:before {
+  top: -20px;
+  visibility: visible;
+}
+
+#overlay-button span:after {
+  top: 20px;
+}
+
+#overlay-button span:before, #overlay-button span:after {
+  height: 8px;
+  width: 70px;
+  border-radius: 4px;
+  background-color: #464646;
+  -webkit-box-shadow: -15px 20px 30px rgba(0, 0, 0, 0.7);
+          box-shadow: -15px 20px 30px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  content: "";
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #menu {
+  visibility: visible;
+}
+
+input[type=checkbox]:checked ~ #overlay-button span {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input[type=checkbox]:checked ~ #overlay-button span:before {
+  -webkit-transform: rotate(45deg) translate(14px, 14px);
+          transform: rotate(45deg) translate(14px, 14px);
+  opacity: 1;
+  background-color: #fddb79;
+}
+
+input[type=checkbox]:checked ~ #overlay-button span:after {
+  -webkit-transform: rotate(-45deg) translate(14px, -14px);
+          transform: rotate(-45deg) translate(14px, -14px);
+  background-color: #fddb79;
+}
+
+/* Display Dropdown when clicked on Parent Lable */
+/* Change menu item's width to 100% */
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+p {
+  padding: 0;
+}
+
+.left-half, .right-half {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 2rem;
+}
+
+.left-half img, .right-half img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+div {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: max-height 2s;
+  transition: max-height 2s;
+}
+
+.last {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.first {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+/* fiks paddingen */
+section div:first-child {
+  margin-right: 2rem;
+}
+
+.right-header {
+  padding: 2rem;
+}
+
+.widescreen img {
+  max-width: 100%;
+  margin-top: 0;
+}
+
+#dipper img {
+  display: none;
+}
+
+.right-pic img {
+  margin-top: 1rem;
+}
+
+.left-pic img, .right-pic img {
+  width: 70vw;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+p, li a {
+  font-size: 2rem;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+.btn {
+  padding: 25px;
+  font-size: 25px;
+  border-radius: 45px;
+}
+
+.btnAlle {
+  /*top: 20px;*/
+  top: -500px;
+  bottom: unset;
+}
+
+.btnProduct {
+  /*top: 105px;*/
+  top: -500px;
+  bottom: unset;
+}
+
+.btnGraphic {
+  /*top: 190px;*/
+  top: -500px;
+  bottom: unset;
 }
 
 /* ----------------------------------------------------phone size ------------------------------------------------------------------*/
@@ -682,4 +722,4 @@ img.vertical-pic {
     bottom: unset;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=reserve.css.map */
