@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Motion</title>
+	<title>Wingman</title>
 	<link rel="stylesheet" href="main.css">
 	<script>
 		/*!
@@ -10002,17 +10002,12 @@
 
 		})(window);
 	</script>
-	<style>
-		#animation {
-			object-fit: contain;
-			width: 70vw;
-		}
-	</style>
 </head>
 
-<body onload="activate()">
+<body onload="activate()" style="background-color: #252525">
 	<!--Navigation bar-->
 	<div id="nav-placeholder">
+
 	</div>
 
 	<script>
@@ -10021,60 +10016,75 @@
 		});
 
 		function activate() {
-			var element = document.getElementById("motion");
+			var element = document.getElementById("wingman");
 			element.classList.add("active");
 		}
 	</script>
 	<!--end of Navigation bar-->
-	<section class="container" style="background-color: #E85D5D;">
-		<div class="left-half" id="animation">
+	<section class="container whitespace" style="padding: 0 0 15vh 0;">
+		<div class="left-half">
+			<img src="img/wingman_whole.jpg" alt="Woopsi, det skulle visst vært et bilde her." class="shadow">
 		</div>
 		<div class="right-header">
-			<h1>motion</h1>
+			<h1 class="lighter">wingman</h1>
 		</div>
 	</section>
-	<section class="container whitespace" style="background-color: #291F3B;">
+	<section style="background-color: white;" class="container whitespace">
 		<div class="left-half last">
-			<p class="lighter">Fikk litt dilla på animasjoner. <br>Denne er fra visittkortet til S. Møller Storband.</p>
+			<p>Dette prosjektet ble til på grunn av en kjøkkenbenk, en fasinasjon for vingemuttere og et initiativ til å
+				få bedre holdning. Kjøkkenbenken var praktisk talt en bardisk, som var veldig fin til å spise frokost
+				ved. Problemet var at vi ikke hadde noen gode tilhørende barstoler. De vi hadde gjorde at man alltid
+				startet dagen som en litt slapp sakkosekk, noe jeg ikke mente var helt ønskelig. Dermed bestemte jeg meg
+				for å lage et par stoler som tilrettela for god sitteholdning. På dette tidspunktet, hadde jeg en stor
+				fasinasjon (har den fremdeles) for vingemuttere. De er så estetisk vakre samtidig som formen gjør dem
+				praktiske og intuitive i bruk. Formen til stolen er altså gitt av at vingemutteren enkelt skal kunne
+				monteres, og at man skal starte dagen med rak rygg.
+			</p>
 		</div>
-		<div class="right-half" id="band">
+		<div class="right-half first">
+			<img src="img/wingman_bw.jpg" class="vertical-pic shadow" alt="Woopsi, det skulle visst vært et bilde her.">
 		</div>
 	</section>
-	<section class="container whitespace" style="background-color: #110808;">
-		
-		<div class="right-half" id="ninja" style="margin-right: 0;">
+	<section class="container whitespace-margin">
+		<div class="left-half">
+			<img src="img/wingman_closeKnott.jpg" class="vertical-pic shadow-r"
+				alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+		<div class="right-half">
+			<p class="lighter">Frambeina har blitt dreid av litt i toppen slik at sitteplata stopper mot noe. 
+				Den er i tillegg festet med press fra vingemutterne. </p>
 		</div>
 	</section>
-	
-	<script src="animation/lottie.js"></script>
-
-	<script>
-		var animation = bodymovin.loadAnimation({
-			container: document.getElementById("animation"),
-			renderer: "svg",
-			loop: true,
-			autoplay: true,
-			path: "animation/stroll.json"
-		})
-	</script>
-	<script>
-		var animation = bodymovin.loadAnimation({
-			container: document.getElementById("band"),
-			renderer: "svg",
-			loop: true,
-			autoplay: true,
-			path: "animation/smoller.json"
-		})
-	</script>
-	<script>
-		var animation = bodymovin.loadAnimation({
-			container: document.getElementById("ninja"),
-			renderer: "svg",
-			loop: true,
-			autoplay: true,
-			path: "animation/ninja.json"
-		})
-	</script>
+	<section class="container whitespace">
+		<div class="left-half last">
+			<p class="lighter">Denne bolten sørger for at ikke sitteplata ikke sklir av bakbeina.</p>
+		</div>
+		<div class="right-half first">
+			<img src="img/wingman_under.jpg" class="vertical-pic shadow"
+				alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
+	<section class="container whitespace">
+		<div class="left-half last">
+			<p class="lighter">Kryssfineren er i allefall tykk nok. </p>
+		</div>
+		<div class="right-half first">
+			<img src="img/wingman_frontskrue.jpg" class="vertical-pic shadow"
+				alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
+	<section class="container whitespace">
+		<div class="left-half last">
+			<p class="lighter">Enkel å montere.</p>
+		</div>
+		<div class="right-half first">
+			<img src="img/wingman_wing.jpg" class="vertical-pic shadow"
+				alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
+	<div class="widescreen">
+		<img style="margin-top: 0" src="img/wingman_wide.jpg" alt="Woopsi, det skulle visst vært et bilde her.">
+	</div>
 </body>
 
 </html>

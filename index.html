@@ -10077,7 +10077,19 @@
             margin-left: auto;
             margin-right: auto;
             max-width: 100%;
-            z-index: -1;
+            z-index: -2;
+        }
+        .arrow {
+            width: 100%;
+            max-width: 150px;
+            position: absolute;
+            left: 45%;
+            right: auto;
+            bottom: 18vh;
+            transition: ease-in 0.1s;
+        }
+        .arrow:hover {
+            bottom: 16vh;
         }
 
         /* ------------------------------------GALLERY---------------------------- */
@@ -10144,7 +10156,7 @@
         }
 
         .galleryText {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -10157,6 +10169,10 @@
 
         /* Responsive layout - makes a two column-layout instead of four columns */
         @media (max-aspect-ratio: 9/8) {
+            .arrow {
+                bottom: 5vh;
+            }
+     
             .background-gradient {
                 background-color: #F4D873;
             }
@@ -10209,6 +10225,9 @@
 <body onload="activate()" class="background-gradient">
     <!--Navigation bar-->
     <div id="nav-placeholder">
+    </div>
+    <div class="arrow">
+        <img src="img/arrow.svg" class="vertical-center" alt="arrow" style="z-index: -1;">
     </div>
     <div>
         <img src="img/logo.svg" class="logo vertical-center" alt="Olve Design">
@@ -10269,7 +10288,7 @@
                 </a>
             </div_>
             <div_ class="hoverContainer">
-                <a href="motion.html"><img src="img/birdsview_map.gif" style="width:100%"
+                <a href="motion.html"><img src="img/motion_thumb.gif" style="width:100%"
                         class="filterDiv grafisk shadow">
                     <div_ class="filterDiv grafisk overlay">
                         <p class="filterDiv grafisk galleryText">Motion</p>
@@ -10315,6 +10334,14 @@
                         class="filterDiv produkt shadow">
                     <div_ class="filterDiv produkt overlay">
                         <p class="filterDiv produkt galleryText">Pip</p>
+                    </div_>
+                </a>
+            </div_>
+            <div_ class="hoverContainer">
+                <a href="wingman.html"><img src="img/wingman_thumb.jpg" style="width:100%"
+                        class="filterDiv produkt shadow">
+                    <div_ class="filterDiv produkt overlay">
+                        <p class="filterDiv produkt galleryText">Wingman</p>
                     </div_>
                 </a>
             </div_>
