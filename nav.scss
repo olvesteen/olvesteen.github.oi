@@ -31,6 +31,7 @@ $border: 3px solid #464646;
 
 /* ------------------------------------Boxes---------------------------- */
 .boxes div {
+  z-index: 4;
   position: fixed;
   background-color: $main-grey;
   box-sizing: unset;

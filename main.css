@@ -186,6 +186,10 @@ img.logo {
   z-index: 5;
 }
 
+.z-back {
+  z-index: 0;
+}
+
 .lighter {
   color: lightgray;
 }
