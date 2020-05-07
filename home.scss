@@ -6,6 +6,7 @@
 $main-grey: #464646;
 $yellow: rgb(253, 219, 121);
 $preShadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
+$boxShadow: -50px 50px 100px rgba(0, 0, 0, 0.3);
 $border: 3px solid #464646;
 
 .background-gradient {
@@ -89,12 +90,7 @@ $border: 3px solid #464646;
 }
 .dot {
     top: calc(35vh + 6.5em) !important;
-    height: 0.1em;
-    width: 0.1em;
-    right: 40%;
-    &:hover {
-        right: 38%;
-    }
+    right: 42%;
 }
 .box1 {
     height: 2vh;
@@ -138,10 +134,10 @@ $border: 3px solid #464646;
 }
 .arrow {
     width: 100%;
-    max-width: 150px;
+    width: 5vw;
     position: absolute;
-    left: 45%;
-    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 18vh;
     transition: ease-in 0.1s;
 

@@ -91,13 +91,7 @@
 
 .dot {
   top: calc(35vh + 6.5em) !important;
-  height: 0.1em;
-  width: 0.1em;
-  right: 40%;
-}
-
-.dot:hover {
-  right: 38%;
+  right: 42%;
 }
 
 .box1 {
@@ -150,10 +144,11 @@
 
 .arrow {
   width: 100%;
-  max-width: 150px;
+  width: 5vw;
   position: absolute;
-  left: 45%;
-  right: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: 18vh;
   -webkit-transition: ease-in 0.1s;
   transition: ease-in 0.1s;
