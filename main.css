@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap");
+/* ---------------------------------------variabels---------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -175,6 +176,10 @@ img.logo {
   margin-right: auto;
   max-width: 100%;
   z-index: -2;
+}
+
+.frame {
+  outline: 3px solid #464646;
 }
 
 .z-front {
