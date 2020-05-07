@@ -230,6 +230,9 @@ $border: 3px solid #464646;
 }
 
 @media (max-aspect-ratio: 9 / 7) {
+    .arrow {
+        display: none;
+    }
     #mobAnimation {
         display: block;
         height: 100vh;

@@ -119,6 +119,10 @@ p {
   max-height: 999999px;
 }
 
+p a {
+  color: #464646;
+}
+
 ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,7 +461,8 @@ img.vertical-pic {
     max-width: 50vw;
   }
   p {
-    padding: 0;
+    padding: 0 2rem;
+    max-width: unset;
   }
   #home {
     padding-top: 100px;
