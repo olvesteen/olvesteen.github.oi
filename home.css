@@ -42,7 +42,7 @@
 
 #olve h2 {
   color: #464646;
-  font-size: 8em;
+  font-size: 7em;
   font-weight: 200;
   pointer-events: none;
 }
@@ -55,8 +55,8 @@
 #design h2 {
   padding-top: 1vh;
   color: #fddb79;
-  font-size: 6em;
-  font-weight: 400;
+  font-size: 5em;
+  font-weight: 300;
   pointer-events: none;
 }
 
@@ -90,10 +90,10 @@
 }
 
 .dot {
-  top: calc(35vh + 7.4em) !important;
+  top: calc(35vh + 6.5em) !important;
   height: 0.1em;
   width: 0.1em;
-  right: 41%;
+  right: 40%;
 }
 
 .dot:hover {

@@ -42,7 +42,7 @@ $border: 3px solid #464646;
     outline: $border;
     & h2 {
         color: $main-grey;
-        font-size: 8em;
+        font-size: 7em;
         font-weight: 200;
         pointer-events: none;
     }
@@ -53,8 +53,8 @@ $border: 3px solid #464646;
     & h2 {
         padding-top: 1vh;
         color: $yellow;
-        font-size: 6em;
-        font-weight: 400;
+        font-size: 5em;
+        font-weight: 300;
         pointer-events: none;
     }
 }
@@ -88,10 +88,10 @@ $border: 3px solid #464646;
     }
 }
 .dot {
-    top: calc(35vh + 7.4em) !important;
+    top: calc(35vh + 6.5em) !important;
     height: 0.1em;
     width: 0.1em;
-    right: 41%;
+    right: 40%;
     &:hover {
         right: 38%;
     }
