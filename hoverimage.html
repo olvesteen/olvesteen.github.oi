@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+    #preview {
+        position: absolute; 
+        left: 20%;
+        top: 20%;
+        width: 10vw;
+        border-style: solid;
+        border-width: 5px;
+    }
+        
+    </style>
+<title>Test Page</title>
+
+<script>
+
+var preview;
+
+window.onload = function ()
+   {
+    preview = document.getElementById ("preview");
+   }
+   window.onload = function ()
+   {
+    preview = document.getElementById ("preview2");
+   }
+
+</script>
+
+</head>
+<body>
+
+<div>
+   <img style="visibility:hidden;" id="preview" src="img/about_trapp_thumb.jpg">
+   
+</div>
+<p>
+   <a href="target1" onmouseover="preview.style.visibility='visible';  onmouseout="preview.style.visibility='hidden';">link 1</a>
+</p>
+
+</body>
+</html>
+
+<!--preview.src='img/about_trapp_thumb.jpg';"-->

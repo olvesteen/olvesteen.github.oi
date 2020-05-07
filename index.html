@@ -6,6 +6,8 @@
     <title>Olve Design</title>
     <meta name="description" content="Min hjemmesnekra webportefølje." />
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="home.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <script>
         /*!
@@ -10056,319 +10058,182 @@
 
         })(window);
     </script>
-    <style>
-        /* ---------OLVE DESIGN--------------- */
-        .background-gradient {
-            height: 100vh;
-            background-color: #E4C969;
-            /* transition the background-color over 1s with a linear animation */
-            transition: background-color 5s cubic-bezier(0, 0, 0.25, 1);
-            ;
-        }
-
-        /* the :hover that causes the background-color to change */
-        .background-gradient:hover {
-            background-color: #F4D873;
-        }
-
-        img.logo {
-            max-height: 90vh;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 100%;
-            z-index: -2;
-        }
-        .arrow {
-            width: 100%;
-            max-width: 150px;
-            position: absolute;
-            left: 45%;
-            right: auto;
-            bottom: 18vh;
-            transition: ease-in 0.1s;
-        }
-        .arrow:hover {
-            bottom: 16vh;
-        }
-
-        /* ------------------------------------GALLERY---------------------------- */
-        * {
-            box-sizing: border-box;
-        }
-
-        .row {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE10 */
-            flex-wrap: wrap;
-            padding: 0 4px;
-            margin: 100px 200px 100px;
-        }
-
-        /* Create four equal columns that sits next to each other */
-        .column {
-            -ms-flex: 25%;
-            /* IE10 */
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 4px;
-        }
-
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
-            border-style: solid;
-            border-color: #464646;
-            border-width: 10px;
-        }
-
-        /* ---------------------------------------------------------HOVER--------------------------------------------- */
-        .hoverContainer {
-            position: relative;
-            display: block;
-            width: 100%;
-        }
-
-        .galleryImage {
-            width: 100%;
-            height: auto;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: #464646;
-        }
-
-        .hoverContainer:hover .overlay {
-            opacity: 0.9;
-        }
-
-        .galleryText {
-            font-size: 1.5rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media (max-aspect-ratio: 9/8) {
-            .arrow {
-                bottom: 5vh;
-            }
-     
-            .background-gradient {
-                background-color: #F4D873;
-            }
-
-            .galleryText {
-                font-size: 3rem;
-            }
-
-            .column img {
-                margin-top: 16px;
-                border-width: 16px;
-            }
-
-            .row {
-                margin: 100vh 100px 100px;
-            }
-
-            .column {
-                -ms-flex: 50%;
-                flex: 50%;
-                max-width: 50%;
-                padding: 0 8px;
-            }
-
-            nav {
-                z-index: 0;
-            }
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media (max-aspect-ratio: 5/8) {
-            .column {
-                -ms-flex: 100%;
-                flex: 100%;
-                max-width: 100%;
-            }
-
-            .galleryText {
-                font-size: 6rem;
-            }
-
-            .column img {
-                margin-top: 30px;
-                border-width: 30px;
-            }
-        }
-    </style>
+    
 </head>
 
 <body onload="activate()" class="background-gradient">
     <!--Navigation bar-->
     <div id="nav-placeholder">
     </div>
-    <div class="arrow">
+
+    <!--div class="arrow">
         <img src="img/arrow.svg" class="vertical-center" alt="arrow" style="z-index: -1;">
+    </div-->
+    <div class="olveDesign">
+        <div id="olve">
+            <h2>olve</h2>
+        </div>
+        <div id="design">
+            <h2>design</h2>
+        </div>
     </div>
-    <div>
-        <img src="img/logo.svg" class="logo vertical-center" alt="Olve Design">
+    <div class="boxesHome">
+        <div class="dot"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+    </div>
+    <div id="mobAnimation">
     </div>
     <!-- Portfolio Gallery Grid -->
-    <div_ class="row">
-        <div_ class="column" style="z-index: 3;">
+    <div_ class="rowIndex">
+        <div_ class="columnIndex" style="z-index: 3;">
 
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
+                <a href="about.html"><img src="img/about_trapp_thumb.jpg" style="width:100%" class="filterDiv shadow">
+                    <div_ class="filterDiv overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Om</p>
+                    </div_>
+                </a>
+            </div_>
+            <div_ class="hoverContainerIndex">
                 <a href="birdsview.html">
                     <img src="img/birdsview_icon.svg" style="background-color: #EBF0FE;"
-                        class="filterDiv grafisk shadow galleryImage">
-                    <div_ class="filterDiv grafisk overlay">
-                        <p class="filterDiv grafisk galleryText">Birdsview</p>
+                        class="filterDiv grafisk shadow galleryImageIndex">
+                    <div_ class="filterDiv grafisk overlayIndex">
+                        <p class="filterDiv grafisk galleryTextIndex">Birdsview</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="skanner.html"><img src="img/skanner_thumbnail.jpg" style="width:100%"
                         class="filterDiv produkt shadow">
-                    <div_ class="filterDiv produkt overlay">
-                        <p class="filterDiv produkt galleryText">Skanner</p>
+                    <div_ class="filterDiv produkt overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Skanner</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="rotfot.html"><img src="img/rotfot_thumbnail.jpg" style="width:100%"
                         class="filterDiv produkt shadow">
-                    <div_ class="filterDiv produkt overlay">
-                        <p class="filterDiv produkt galleryText">Rotfot</p>
+                    <div_ class="filterDiv produkt overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Rotfot</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="kakskiv.html"><img src="img/kakskiv_thumbnail.jpg" style="width:100%"
                         class="filterDiv produkt shadow">
-                    <div_ class="filterDiv produkt overlay">
-                        <p class="filterDiv produkt galleryText">Kakskiv</p>
+                    <div_ class="filterDiv produkt overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Kakskiv</p>
                     </div_>
                 </a>
             </div_>
         </div_>
-        <div_ class="column" style="z-index: 2;">
-            <div_ class="hoverContainer">
+        <div_ class="columnIndex" style="z-index: 2;">
+            <div_ class="hoverContainerIndex">
                 <a href="gaga.html"><img src="img/gaga_thumbnail.jpg" style="width:100%"
                         class="filterDiv produkt shadow">
-                    <div_ class="filterDiv produkt overlay">
-                        <p class="filterDiv produkt galleryText">Gaga</p>
+                    <div_ class="filterDiv produkt overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Gaga</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="stagverk.html"><img src="img/stagverk_thumbnail.jpg" style="width:100%"
                         class="filterDiv produkt shadow">
-                    <div_ class="filterDiv produkt overlay">
-                        <p class="filterDiv produkt galleryText">Stagverk</p>
+                    <div_ class="filterDiv produkt overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Stagverk</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="motion.html"><img src="img/motion_thumb.gif" style="width:100%"
                         class="filterDiv grafisk shadow">
-                    <div_ class="filterDiv grafisk overlay">
-                        <p class="filterDiv grafisk galleryText">Motion</p>
+                    <div_ class="filterDiv grafisk overlayIndex">
+                        <p class="filterDiv grafisk galleryTextIndex">Motion</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="sydney.html"><img src="img/sydney_thumbnail.jpg" style="width:100%"
                         class="filterDiv grafisk shadow">
-                    <div_ class="filterDiv grafisk overlay">
-                        <p class="filterDiv grafisk galleryText">Sydney</p>
+                    <div_ class="filterDiv grafisk overlayIndex">
+                        <p class="filterDiv grafisk galleryTextIndex">Sydney</p>
                     </div_>
                 </a>
             </div_>
         </div_>
-        <div_ class="column" style="z-index: 1;">
-            <div_ class="hoverContainer">
+        <div_ class="columnIndex" style="z-index: 1;">
+            <div_ class="hoverContainerIndex">
                 <a href="moby.html"><img src="img/moby_thumbnail.jpg" style="width:100%"
                         class="filterDiv produkt shadow">
-                    <div_ class="filterDiv produkt overlay">
-                        <p class="filterDiv produkt galleryText">Moby</p>
+                    <div_ class="filterDiv produkt overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Moby</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="smoller.html"><img src="img/smoller_thumbnail.jpg" style="width:100%"
                         class="filterDiv grafisk shadow">
-                    <div_ class="filterDiv grafisk overlay">
-                        <p class="filterDiv grafisk galleryText">S.Møller</p>
+                    <div_ class="filterDiv grafisk overlayIndex">
+                        <p class="filterDiv grafisk galleryTextIndex">S.Møller</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="spenn.html"><img src="img/spenn_thumbnail.jpg" style="width:100%"
                         class="filterDiv produkt shadow">
-                    <div_ class="filterDiv produkt overlay">
-                        <p class="filterDiv produkt galleryText">Spænn</p>
+                    <div_ class="filterDiv produkt overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Spænn</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="pipe.html"><img src="img/pipe_thumbnail.jpg" style="width:100%"
                         class="filterDiv produkt shadow">
-                    <div_ class="filterDiv produkt overlay">
-                        <p class="filterDiv produkt galleryText">Pip</p>
+                    <div_ class="filterDiv produkt overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Pip</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="wingman.html"><img src="img/wingman_thumb.jpg" style="width:100%"
                         class="filterDiv produkt shadow">
-                    <div_ class="filterDiv produkt overlay">
-                        <p class="filterDiv produkt galleryText">Wingman</p>
+                    <div_ class="filterDiv produkt overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Wingman</p>
                     </div_>
                 </a>
             </div_>
         </div_>
-        <div_ class="column">
-            <div_ class="hoverContainer">
-                <a href="flow.html"><img src="img/flow_x.svg" style="width:100%; padding: 8px; background: rgb(154,194,202);
+        <div_ class="columnIndex">
+            <div_ class="hoverContainerIndex">
+                <a href="iso.html"><img src="img/flow_x.svg" style="width:100%; padding: 8px; background: rgb(154,194,202);
             background: linear-gradient(126deg, rgba(154,194,202,1) 8%, rgba(238,205,192,1) 62%);"
                         class="filterDiv grafisk shadow">
-                    <div_ class="filterDiv grafisk overlay">
-                        <p class="filterDiv grafisk galleryText">Isometri</p>
+                    <div_ class="filterDiv grafisk overlayIndex">
+                        <p class="filterDiv grafisk galleryTextIndex">Isometri</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="blaff.html"><img src="img/blaff_thumbnail.jpg" style="width:100%"
                         class="filterDiv produkt shadow">
-                    <div_ class="filterDiv produkt overlay">
-                        <p class="filterDiv produkt galleryText">Blaff</p>
+                    <div_ class="filterDiv produkt overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Blaff</p>
                     </div_>
                 </a>
             </div_>
-            <div_ class="hoverContainer">
+            <div_ class="hoverContainerIndex">
                 <a href="lytt.html"><img src="img/lytt_thumbnail.jpg" style="width:100%"
                         class="filterDiv produkt shadow">
-                    <div_ class="filterDiv produkt overlay">
-                        <p class="filterDiv produkt galleryText">Lytt</p>
+                    <div_ class="filterDiv produkt overlayIndex">
+                        <p class="filterDiv produkt galleryTextIndex">Lytt</p>
                     </div_>
                 </a>
             </div_>
@@ -10383,6 +10248,24 @@
             var element = document.getElementById("home");
             element.classList.add("active");
         }
+    </script>
+    <!---------------------Mob Animation----------------------------->
+    <script src="animation/lottie.js"></script>
+    <script>
+        /* Play an animation on each click */
+        let iconSkipForward = document.getElementById('mobAnimation');
+
+        let animationSkipForward = bodymovin.loadAnimation({
+            container: iconSkipForward,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animation/dropBox.json"
+        });
+
+        iconSkipForward.addEventListener('click', function () {
+            animationSkipForward.playSegments([0, 60], true);
+        });
     </script>
     <!--end of Navigation bar-->
 </body>

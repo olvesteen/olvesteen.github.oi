@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -31,40 +35,53 @@ $main-grey: #464646;
   font-size: 15px;
   background: $main-grey;
   padding: 20px;
-  border-radius: 50px;
   display: block;
   border: none;
+  outline: none;
   transition: all 0.4s ease 0s;
   position: fixed;
   right: 20px;
-  box-shadow: -16px 16px 35px rgba(0, 0, 0, 0.5);
 }
+
+$shadowBtn: 48px rgba(0, 0, 0, 0.4);
+$shadowMouseOver: -9px 5px 22px rgba(0, 0, 0, 0.5);
+$shadowActive: 9px 5px 18px rgba(0, 0, 0, 0.6);
 
 .btnAlle {
   top: 20px;
+  -webkit-box-shadow: -20px 78px $shadowBtn;
+    -moz-box-shadow: -20px 78px $shadowBtn;
+    box-shadow: -20px 154px $shadowBtn;
 }
 
 .btnProduct {
-  top: 85px;
+  top: 76px;
+  -webkit-box-shadow: -20px 108px $shadowBtn;
+    -moz-box-shadow: -20px 108px $shadowBtn;
+    box-shadow: -20px 98px $shadowBtn;
 }
 
 .btnGraphic {
-  top: 150px;
+  top: 134px;
+  -webkit-box-shadow: -20px 40px $shadowBtn;
+    -moz-box-shadow: -20px 40px $shadowBtn;
+    box-shadow: -20px 40px $shadowBtn;
 }
-
-/* change shawow on mouse-over */
 
 .btn {
+  /* change shawow on mouse-over */
   &:hover {
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: $shadowMouseOver;
+    -moz-box-shadow: $shadowMouseOver;
+    box-shadow: $shadowMouseOver;
   }
-
+/* change shadow to the active button */
   &.active {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: $shadowActive;
+    -moz-box-shadow: $shadowActive;
+    box-shadow: $shadowActive;
   }
 }
-
-/* change shadow to the active button */
 
 .portrait {
   margin-top: 5vh;
@@ -88,6 +105,25 @@ img.navpic {
 
 #navMob-pic, #navTab-pic {
   display: none;
+}
+
+h1, h2, li a, .btn {
+  font-family: 'Montserrat','Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: $main-grey;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: $main-grey;
+  font-size: 19px;
+  padding: 3rem;
+  max-width: 700px;
+  max-height: 999999px;
 }
 
 ul {
@@ -131,31 +167,17 @@ nav {
   z-index: 6;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
-h1, p, li a {
-  font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 5rem;
-  color: $main-grey;
-}
-
-p {
-  color: $main-grey;
-  font-size: 19px;
-  padding: 3rem;
-  max-width: 700px;
-  max-height: 999999px;
-}
-
 /*-------------------------GALLERY----------------------------------------*/
 
 /*----------------------------------Styleing for enkeltsider---------------------------*/
+img.logo {
+  max-height: 95vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  z-index: -2;
+}
 
 .z-front {
   z-index: 5;
@@ -346,11 +368,6 @@ img.vertical-pic {
 
 /* ----------------------- Mobile dropdown menu ------------------------ */
 
-/* Hide checkbox */
-
-[id^=overlay-input] {
-  display: none;
-}
 
 /* Media Queries
 ------------------------------------------------------------------------ */
@@ -378,7 +395,7 @@ img.vertical-pic {
 }
 
 /*--------------------------------------------------------ipad----------------------------------------------------------------------*/
-@media (max-aspect-ratio: 9 / 8) {
+@media (max-aspect-ratio: 9 / 7) {
   .container {
     flex-direction: column;
     padding-bottom: 2rem;
@@ -436,106 +453,6 @@ img.vertical-pic {
 
   #slim {
     max-width: 50vw;
-  }
-
-  /* Hide the navigation menu by default */
-  /* Also hide the  */
-  #menu {
-    height: 100vh;
-    width: 100vw;
-    /*transition: all 0.3s ease-in-out;
-    background: transparent;*/
-    visibility: hidden;
-    &.active {
-      visibility: visible;
-    }
-    ul {
-      height: 100vh;
-    }
-  }
-
-  @keyframes bugfix { from {padding:0;} to {padding:0;}}
-  @-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
-
-  $ham-shadow: -30px 40px 30px rgba(0, 0, 0, 1);
-  #overlay-button {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 6em 3em;
-    z-index: 9;
-    user-select: none;
-    span {
-        height: 8px;
-        width: 70px;
-        /*border-radius: 4px;*/
-        background-color: $main-grey;
-        position: relative;
-        display: block;
-        box-shadow: $ham-shadow;
-        transition: all .2s ease-in-out;
-        &:before {
-          top: -20px;
-          visibility: visible;
-        }
-        &:after {
-          top: 20px;
-        }
-        &:before, &:after {
-            height: 8px;
-            width: 70px;
-            /*border-radius: 4px;*/
-            background-color: $main-grey;
-            box-shadow: $ham-shadow;
-            position: absolute;
-            content: "";
-            transition: all .2s ease-in-out;
-        }
-      }
-      
-  }
-  
-  input[type=checkbox] {
-    display: none;
-  }
-   
-  input[type=checkbox]:checked ~ #menu {
-    visibility: visible; 
-    background: $main-grey;
-  }
-  
-  input[type=checkbox]:checked ~ #overlay-button {
-    span{
-      background: transparent;
-      box-shadow: none;
-    }
-    span {
-      &:before {
-        transform: rotate(45deg) translate(14px, 14px);
-        opacity: 1;
-        background-color: rgb(253, 219, 121);
-        box-shadow: -20px 20px 30px rgba(0, 0, 0, 1);
-      }
-      &:after {
-        transform: rotate(-45deg) translate(14px, -14px);
-        background-color: rgb(253, 219, 121);
-        box-shadow: -20px 20px 30px rgba(0, 0, 0, 1);
-      }
-    }
-  }
-
-
-  /* Change menu item's width to 100% */
-
-  ul {
-    padding: 0;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  nav ul li {
-    display: flex;
-    justify-content: center;
   }
 
   p {
@@ -610,32 +527,47 @@ img.vertical-pic {
   }
 
   .btn {
+    display: none;
     padding: 25px;
     font-size: 25px;
-    border-radius: 45px;
+    width: 20vw;
   }
+  $shadowBtnMob: -20px 25px 35px rgba(0, 0, 0, 0.4);
 
   .btnAlle {
-    /*top: 20px;*/
-    top: -500px;
-    bottom: unset;
+    top: unset;
+    bottom: 2.5em;
+    left: 60vw;
+    -webkit-box-shadow: $shadowBtnMob;
+    -moz-box-shadow: $shadowBtnMob;
+    box-shadow: $shadowBtnMob;
+ 
   }
 
   .btnProduct {
-    /*top: 105px;*/
-    top: -500px;
-    bottom: unset;
+    top: unset;
+    bottom: 2.5em;
+    left: 35vw;
+    -webkit-box-shadow: $shadowBtnMob;
+    -moz-box-shadow: $shadowBtnMob;
+    box-shadow: $shadowBtnMob;
   }
 
   .btnGraphic {
-    /*top: 190px;*/
-    top: -500px;
-    bottom: unset;
+    top: unset;
+    bottom: 2.5em;
+    left: 10vw;
+    -webkit-box-shadow: $shadowBtnMob;
+    -moz-box-shadow: $shadowBtnMob;
+    box-shadow: $shadowBtnMob;
   }
+  input[type=checkbox]:checked~.btn {
+    display: block;
+  }//funker ikke ... enda...
 }
 
 /* ----------------------------------------------------phone size ------------------------------------------------------------------*/
-@media (max-aspect-ratio: 5 / 8) {
+@media (max-aspect-ratio: 6 / 8) {
   #nav-pic, #navTab-pic {
     display: none;
   }
@@ -655,27 +587,4 @@ img.vertical-pic {
 
   /* Style the buttons for phone */
 
-  .btn {
-    padding: 45px;
-    font-size: 40px;
-    border-radius: 85px;
-  }
-
-  .btnAlle {
-    /*top: 20px;*/
-    top: -500px;
-    bottom: unset;
-  }
-
-  .btnProduct {
-    /*top: 175px;*/
-    top: -500px;
-    bottom: unset;
-  }
-
-  .btnGraphic {
-    /*top: 335px;*/
-    top: -500px;
-    bottom: unset;
-  }
 }

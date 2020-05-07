@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Motion</title>
+	<title>Isometri</title>
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="nav.css">
 	<script>
@@ -10003,17 +10003,12 @@
 
 		})(window);
 	</script>
-	<style>
-		#animation {
-			object-fit: contain;
-			width: 70vw;
-		}
-	</style>
 </head>
 
 <body onload="activate()">
 	<!--Navigation bar-->
 	<div id="nav-placeholder">
+
 	</div>
 
 	<script>
@@ -10022,68 +10017,110 @@
 		});
 
 		function activate() {
-			var element = document.getElementById("motion");
+			var element = document.getElementById("iso");
 			element.classList.add("active");
 		}
 	</script>
 	<!--end of Navigation bar-->
-	<section class="container" style="background-color: #E85D5D;">
-		<div class="left-half" id="animation">
+	<section class="container" 
+	style="background: rgb(154,194,202);
+		background: linear-gradient(126deg, rgba(154,194,202,1) 8%, rgba(238,205,192,1) 62%);">
+		<div class="left-half">
+			<img class="z-front" src="img/flow_x.svg" alt="Woopsi, det skulle visst vært et bilde her." >
 		</div>
 		<div class="right-header">
-			<h1>motion</h1>
+			<h1>isometri</h1>
 		</div>
 	</section>
-	<section class="container whitespace" style="background-color: #291F3B;">
-		<div class="left-half last">
-			<p class="lighter">Fikk litt dilla på animasjoner. <br>Denne er fra visittkortet til S. Møller Storband.</p>
+	<section class="container whitespace">
+		<div class="left-half">
+			<p>Design EXPO er en årlig konferanse arrangert av sivilingeniørstudentene
+				på Institutt for Design ved NTNU i Trondheim. Temaet i 2019 var psykologi og design,
+				med headlineren: Mind the Mind. Som markedsføringsleder hadde jeg blant annet ansvaret for å lage en
+				grafisk
+				profil som underbygget temaet og headlineren. Vi ville lage noe som kunne
+				representere kompleksiteten og mystikken rundt det som foregår oppe i toppen på oss mennesker.
+				<br><br>
+				Resultatet ble en rekke isometriske illustrasjoner som utfordrer betrakteren med intrikate og umulige
+				geometriske former. Xometric (over) var en av mine illustrasjoner.
+			</p>
 		</div>
-		<div class="right-half" id="band">
-		</div>
-	</section>
-	<section class="container whitespace" style="background-color: #110808;">
-		
-		<div class="right-half" id="ninja" style="margin-right: 0;">
-		</div>
-	</section>
-	<!-- <section class="container whitespace" style="background-color: #45AFB1;">
-		
 		<div class="right-half">
-			<video id="video" width="100%" height="100%;" playsinline muted autoplay loop data-silent background-color="transparent"
-			src="animation/vikane3.mp4"> 
-			</video>
+			<img src="img/flow_doodle.png" alt="Woopsi, det skulle visst vært et bilde her.">
 		</div>
-	</section>	 -->
-	
-	<script src="animation/lottie.js"></script>
-
-	<script>
-		var animation = bodymovin.loadAnimation({
-			container: document.getElementById("animation"),
-			renderer: "svg",
-			loop: true,
-			autoplay: true,
-			path: "animation/stroll.json"
-		})
-	</script>
-	<script>
-		var animation = bodymovin.loadAnimation({
-			container: document.getElementById("band"),
-			renderer: "svg",
-			loop: true,
-			autoplay: true,
-			path: "animation/smoller.json"
-		})
-	</script>
-	<script>
-		var animation = bodymovin.loadAnimation({
-			container: document.getElementById("ninja"),
-			renderer: "svg",
-			loop: true,
-			autoplay: true,
-			path: "animation/ninja.json"
-		})
-	</script>
+	</section>
+	<section class="container whitespace">
+		<div class="left-half">
+			<p>Etter Design Expo har jeg laget flere illustrasjoner, for moro skyld: </p>
+		</div>
+		<div class="right-half">
+			<img src="img/flow_bekkskisse.jpg" alt="Woopsi, det skulle visst vært et bilde her." class="vertical-pic">
+		</div>
+	</section>
+	<section class="container" 
+	style="background: rgb(8,52,84);
+	background: linear-gradient(126deg, rgba(8,52,84,1) 14%, rgba(248,170,145,1) 78%); height: 140vh;">
+		<div class="left-half">
+			<img class="z-front" style="height: 100vh;" src="img/flow_bekk.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
+	<section class="container" 
+	style="background: rgb(110,168,165);
+	background: linear-gradient(126deg, rgba(110,168,165,1) 24%, rgba(227,239,189,1) 93%); height: 140vh;">
+		<div class="left-half">
+			<img class="z-front" style="height: 100vh;" src="img/flow_factory.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
+	<section class="container" 
+	style="background: rgb(252,115,64);
+	background: linear-gradient(126deg, rgba(252,115,64,1) 8%, rgba(1,56,144,1) 69%); height: 140vh;">
+		<div class="left-half">
+			<img class="z-front" style="height: 100vh;" src="img/flow_flow.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
+	<section class="container" 
+	style="background: rgb(255,137,44);
+	background: linear-gradient(208deg, rgba(255,137,44,1) 0%, rgba(255,208,44,1) 69%); height: 140vh;">
+		<div class="left-half">
+			<img class="z-front" style=" height: 100vh;" src="img/flow_dobbelB.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
+	<section class="container" 
+	style="background: rgb(47,47,64);
+	background: linear-gradient(331deg, rgba(47,47,64,1) 0%, rgba(175,100,160,1) 77%); height: 130vh;">
+		<div class="left-half">
+			<img class="z-front" style="height: 100vh;" src="img/flow_blokkby.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
+	<section class="container" 
+	style="background: rgb(255,179,64);
+	background: linear-gradient(331deg, rgba(255,179,64,1) 0%, rgba(255,253,87,1) 51%, rgba(255,254,197,1) 100%); height: 130vh;">
+		<div class="left-half">
+			<img class="z-front" style="height: 100vh;" src="img/flow_snurr.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
+	<section class="container" 
+	style="background: rgb(0,151,128);
+	background: linear-gradient(331deg, rgba(0,151,128,1) 0%, rgba(148,231,225,1) 100%); height: 130vh;">
+		<div class="left-half">
+			<img class="z-front" style="height: 100vh;" src="img/flow_donuts.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
+	<section class="container" 
+	style="background: rgb(248,132,44);
+	background: rgb(179,255,209);
+	background: linear-gradient(331deg, rgb(0, 204, 173) 0%, rgb(235, 0, 106) 90%); height: 130vh;">
+		<div class="left-half">
+			<img class="z-front" style="height: 100vh;" src="img/flow_sjogress.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
+	<section class="container" 
+	style="background: rgb(248,132,44);
+	background: linear-gradient(331deg, rgba(248,132,44,1) 0%, rgba(183,28,115,1) 100%); height: 100vh;">
+		<div class="left-half">
+			<img class="z-front" style="height: 100vh;" src="img/flow_fall.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+		</div>
+	</section>
 </body>
 
 </html>

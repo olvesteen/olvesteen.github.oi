@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -33,41 +34,48 @@ body {
   font-size: 15px;
   background: #464646;
   padding: 20px;
-  border-radius: 50px;
   display: block;
   border: none;
+  outline: none;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   position: fixed;
   right: 20px;
-  -webkit-box-shadow: -16px 16px 35px rgba(0, 0, 0, 0.5);
-          box-shadow: -16px 16px 35px rgba(0, 0, 0, 0.5);
 }
 
 .btnAlle {
   top: 20px;
+  -webkit-box-shadow: -20px 78px 48px rgba(0, 0, 0, 0.4);
+  box-shadow: -20px 154px 48px rgba(0, 0, 0, 0.4);
 }
 
 .btnProduct {
-  top: 85px;
+  top: 76px;
+  -webkit-box-shadow: -20px 108px 48px rgba(0, 0, 0, 0.4);
+  box-shadow: -20px 98px 48px rgba(0, 0, 0, 0.4);
 }
 
 .btnGraphic {
-  top: 150px;
+  top: 134px;
+  -webkit-box-shadow: -20px 40px 48px rgba(0, 0, 0, 0.4);
+  box-shadow: -20px 40px 48px rgba(0, 0, 0, 0.4);
 }
 
-/* change shawow on mouse-over */
+.btn {
+  /* change shawow on mouse-over */
+  /* change shadow to the active button */
+}
+
 .btn:hover {
-  -webkit-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -9px 5px 22px rgba(0, 0, 0, 0.5);
+  box-shadow: -9px 5px 22px rgba(0, 0, 0, 0.5);
 }
 
 .btn.active {
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 9px 5px 18px rgba(0, 0, 0, 0.6);
+  box-shadow: 9px 5px 18px rgba(0, 0, 0, 0.6);
 }
 
-/* change shadow to the active button */
 .portrait {
   margin-top: 5vh;
 }
@@ -89,6 +97,25 @@ img.navpic {
 
 #navMob-pic, #navTab-pic {
   display: none;
+}
+
+h1, h2, li a, .btn {
+  font-family: 'Montserrat','Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #464646;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #464646;
+  font-size: 19px;
+  padding: 3rem;
+  max-width: 700px;
+  max-height: 999999px;
 }
 
 ul {
@@ -139,26 +166,17 @@ nav {
   z-index: 6;
 }
 
-h1, p, li a {
-  font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 5rem;
-  color: #464646;
-}
-
-p {
-  color: #464646;
-  font-size: 19px;
-  padding: 3rem;
-  max-width: 700px;
-  max-height: 999999px;
-}
-
 /*-------------------------GALLERY----------------------------------------*/
 /*----------------------------------Styleing for enkeltsider---------------------------*/
+img.logo {
+  max-height: 95vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  z-index: -2;
+}
+
 .z-front {
   z-index: 5;
 }
@@ -357,11 +375,6 @@ img.vertical-pic {
   max-width: 30vw;
 }
 /* ----------------------- Mobile dropdown menu ------------------------ */
-/* Hide checkbox */
-[id^=overlay-input] {
-  display: none;
-}
-
 /* Media Queries
 ------------------------------------------------------------------------ */
 /*widescreen*/
@@ -384,7 +397,7 @@ img.vertical-pic {
 }
 
 /*--------------------------------------------------------ipad----------------------------------------------------------------------*/
-@media (max-aspect-ratio: 9 / 8) {
+@media (max-aspect-ratio: 9 / 7) {
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -433,125 +446,6 @@ img.vertical-pic {
   }
   #slim {
     max-width: 50vw;
-  }
-  /* Hide the navigation menu by default */
-  /* Also hide the  */
-  #menu {
-    height: 100vh;
-    width: 100vw;
-    /*transition: all 0.3s ease-in-out;
-    background: transparent;*/
-    visibility: hidden;
-  }
-  #menu.active {
-    visibility: visible;
-  }
-  #menu ul {
-    height: 100vh;
-  }
-  @keyframes bugfix {
-    from {
-      padding: 0;
-    }
-    to {
-      padding: 0;
-    }
-  }
-  @-webkit-keyframes bugfix {
-    from {
-      padding: 0;
-    }
-    to {
-      padding: 0;
-    }
-  }
-  #overlay-button {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 6em 3em;
-    z-index: 9;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
-  #overlay-button span {
-    height: 8px;
-    width: 70px;
-    /*border-radius: 4px;*/
-    background-color: #464646;
-    position: relative;
-    display: block;
-    -webkit-box-shadow: -30px 40px 30px black;
-            box-shadow: -30px 40px 30px black;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-  }
-  #overlay-button span:before {
-    top: -20px;
-    visibility: visible;
-  }
-  #overlay-button span:after {
-    top: 20px;
-  }
-  #overlay-button span:before, #overlay-button span:after {
-    height: 8px;
-    width: 70px;
-    /*border-radius: 4px;*/
-    background-color: #464646;
-    -webkit-box-shadow: -30px 40px 30px black;
-            box-shadow: -30px 40px 30px black;
-    position: absolute;
-    content: "";
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-  }
-  input[type=checkbox] {
-    display: none;
-  }
-  input[type=checkbox]:checked ~ #menu {
-    visibility: visible;
-    background: #464646;
-  }
-  input[type=checkbox]:checked ~ #overlay-button span {
-    background: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  input[type=checkbox]:checked ~ #overlay-button span:before {
-    -webkit-transform: rotate(45deg) translate(14px, 14px);
-            transform: rotate(45deg) translate(14px, 14px);
-    opacity: 1;
-    background-color: #fddb79;
-    -webkit-box-shadow: -20px 20px 30px black;
-            box-shadow: -20px 20px 30px black;
-  }
-  input[type=checkbox]:checked ~ #overlay-button span:after {
-    -webkit-transform: rotate(-45deg) translate(14px, -14px);
-            transform: rotate(-45deg) translate(14px, -14px);
-    background-color: #fddb79;
-    -webkit-box-shadow: -20px 20px 30px black;
-            box-shadow: -20px 20px 30px black;
-  }
-  /* Change menu item's width to 100% */
-  ul {
-    padding: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  nav ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   p {
     padding: 0;
@@ -621,29 +515,39 @@ img.vertical-pic {
     -ms-text-size-adjust: none;
   }
   .btn {
+    display: none;
     padding: 25px;
     font-size: 25px;
-    border-radius: 45px;
+    width: 20vw;
   }
   .btnAlle {
-    /*top: 20px;*/
-    top: -500px;
-    bottom: unset;
+    top: unset;
+    bottom: 2.5em;
+    left: 60vw;
+    -webkit-box-shadow: -20px 25px 35px rgba(0, 0, 0, 0.4);
+    box-shadow: -20px 25px 35px rgba(0, 0, 0, 0.4);
   }
   .btnProduct {
-    /*top: 105px;*/
-    top: -500px;
-    bottom: unset;
+    top: unset;
+    bottom: 2.5em;
+    left: 35vw;
+    -webkit-box-shadow: -20px 25px 35px rgba(0, 0, 0, 0.4);
+    box-shadow: -20px 25px 35px rgba(0, 0, 0, 0.4);
   }
   .btnGraphic {
-    /*top: 190px;*/
-    top: -500px;
-    bottom: unset;
+    top: unset;
+    bottom: 2.5em;
+    left: 10vw;
+    -webkit-box-shadow: -20px 25px 35px rgba(0, 0, 0, 0.4);
+    box-shadow: -20px 25px 35px rgba(0, 0, 0, 0.4);
+  }
+  input[type=checkbox]:checked ~ .btn {
+    display: block;
   }
 }
 
 /* ----------------------------------------------------phone size ------------------------------------------------------------------*/
-@media (max-aspect-ratio: 5 / 8) {
+@media (max-aspect-ratio: 6 / 8) {
   #nav-pic, #navTab-pic {
     display: none;
   }
@@ -658,25 +562,5 @@ img.vertical-pic {
     max-width: 70vw;
   }
   /* Style the buttons for phone */
-  .btn {
-    padding: 45px;
-    font-size: 40px;
-    border-radius: 85px;
-  }
-  .btnAlle {
-    /*top: 20px;*/
-    top: -500px;
-    bottom: unset;
-  }
-  .btnProduct {
-    /*top: 175px;*/
-    top: -500px;
-    bottom: unset;
-  }
-  .btnGraphic {
-    /*top: 335px;*/
-    top: -500px;
-    bottom: unset;
-  }
 }
 /*# sourceMappingURL=main.css.map */
