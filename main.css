@@ -194,6 +194,14 @@ img.logo {
   z-index: 0;
 }
 
+#butterfly {
+  position: absolute;
+  height: 45vh;
+  width: 40vw;
+  top: 20vh;
+  right: 0;
+}
+
 .lighter {
   color: lightgray;
 }
@@ -442,6 +450,9 @@ img.vertical-pic {
     height: 106vh;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  #butterfly {
+    display: none;
   }
   .size-web {
     height: 0 !important;

@@ -10010,6 +10010,8 @@
 	<!--Navigation bar-->
 	<div id="nav-placeholder">
 	</div>
+	<div id="butterfly">
+	</div>
 	<div class="portrait">
 		<img src="img/about_trapp.jpg" class="logo size-web" alt="Woopsi, det skulle visst vært et bilde her.">
 		<img src="img/about_trapp_mobile.jpg" class="size-mobile" alt="Woopsi, det skulle visst vært et bilde her.">
@@ -10089,6 +10091,16 @@
 		}
 	</script>
 	<!--end of Navigation bar-->
+	<script src="animation/lottie.js"></script>
+	<script>
+		var animation = bodymovin.loadAnimation({
+			container: document.getElementById("butterfly"),
+			renderer: "svg",
+			loop: true,
+			autoplay: true,
+			path: "animation/butterfly.json"
+		})
+	</script>
 </body>
 
 
