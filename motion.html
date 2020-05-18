@@ -363,7 +363,7 @@
 
 							// Recurse if we're merging plain objects or arrays
 							if (deep && copy && (jQuery.isPlainObject(copy) || (copyIsArray = jQuery.isArray(
-								copy)))) {
+									copy)))) {
 								if (copyIsArray) {
 									copyIsArray = false;
 									clone = src && jQuery.isArray(src) ? src : [];
@@ -2029,7 +2029,7 @@
 								(excess = tokenize(unquoted, true)) &&
 								// advance to the next closing parenthesis
 								(excess = unquoted.indexOf(")", unquoted.length - excess) - unquoted.length)
-								) {
+							) {
 
 								// excess is a negative index
 								match[0] = match[0].slice(0, excess);
@@ -2286,11 +2286,11 @@
 									if ((elemLang = documentIsHTML ?
 											elem.lang :
 											elem.getAttribute("xml:lang") || elem.getAttribute("lang")
-											)) {
+										)) {
 
 										elemLang = elemLang.toLowerCase();
 										return elemLang === lang || elemLang.indexOf(lang + "-") ===
-										0;
+											0;
 									}
 								} while ((elem = elem.parentNode) && elem.nodeType === 1);
 								return false;
@@ -4310,7 +4310,7 @@
 					if (!arguments.length) {
 						if (elem) {
 							hooks = jQuery.valHooks[elem.type] || jQuery.valHooks[elem.nodeName
-						.toLowerCase()];
+								.toLowerCase()];
 
 							if (hooks && "get" in hooks && (ret = hooks.get(elem, "value")) !== undefined) {
 								return ret;
@@ -8065,7 +8065,7 @@
 						callbackContext = s.context || s,
 						// Context for global events is callbackContext if it is a DOM node or jQuery collection
 						globalEventContext = s.context && (callbackContext.nodeType || callbackContext
-						.jquery) ?
+							.jquery) ?
 						jQuery(callbackContext) :
 						jQuery.event,
 						// Deferreds
@@ -8109,7 +8109,7 @@
 								var lname = name.toLowerCase();
 								if (!state) {
 									name = requestHeadersNames[lname] = requestHeadersNames[lname] ||
-									name;
+										name;
 									requestHeaders[name] = value;
 								}
 								return this;
@@ -10038,12 +10038,22 @@
 		<div class="left-half last z-back">
 			<p class="lighter">Fikk litt dilla på animasjoner. <br>Denne er fra visittkortet til S. Møller Storband.</p>
 		</div>
-		<div class="right-half z-back" id="band">
+		<div class="right-half z-back" id="band1">
 		</div>
 	</section>
 	<section class="container whitespace" style="background-color: #110808;">
-		
+
 		<div class="right-half" id="ninja" style="margin-right: 0;">
+		</div>
+	</section>
+	<section class="container whitespace" style="background-color: white;">
+		<div class="left-half" id="blueMountain">
+		</div>
+		<div class="right-half" style="flex: 0;">
+			<p>
+				Inspirert av illustrasjonsstilen til Tom Haugomat og "spektakulæriteten" til The Blue Mountains,
+				Australia.
+			</p>
 		</div>
 	</section>
 	<!-- <section class="container whitespace" style="background-color: #45AFB1;">
@@ -10054,7 +10064,7 @@
 			</video>
 		</div>
 	</section>	 -->
-	
+
 	<script src="animation/lottie.js"></script>
 
 	<script>
@@ -10068,11 +10078,11 @@
 	</script>
 	<script>
 		var animation = bodymovin.loadAnimation({
-			container: document.getElementById("band"),
+			container: document.getElementById("band1"),
 			renderer: "svg",
 			loop: true,
 			autoplay: true,
-			path: "animation/smoller.json"
+			path: "animation/smoller1.json"
 		})
 	</script>
 	<script>
@@ -10082,6 +10092,15 @@
 			loop: true,
 			autoplay: true,
 			path: "animation/ninja.json"
+		})
+	</script>
+	<script>
+		var animation = bodymovin.loadAnimation({
+			container: document.getElementById("blueMountain"),
+			renderer: "svg",
+			loop: true,
+			autoplay: true,
+			path: "animation/blueMountain.json"
 		})
 	</script>
 

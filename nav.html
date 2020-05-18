@@ -8,6 +8,7 @@
         <div id="boxgaga"></div>
         <div id="boxstagverk"></div>
         <div id="boxmoby"></div>
+        <div id="boxbixit"></div>
         <div id="boxsmoller"></div>
         <div id="boxiso"></div>
         <div id="boxmotion"></div>
@@ -36,6 +37,8 @@
                 <li><a id="stagverk" class="filterDiv produkt" href="stagverk.html">Stagverk<img
                                         src="img/stagverk_thumbnail.jpg" /></a></li>
                 <li><a id="moby" class="filterDiv produkt" href="moby.html">Moby<img src="img/moby_thumbnail.jpg" /></a>
+                </li>
+                <li><a id="bixit" class="filterDiv grafisk" href="bixit.html">Bixit<img src="img/bixit_thumbnail.jpg" /></a>
                 </li>
                 <li><a id="smoller" class="filterDiv grafisk" href="smoller.html">S. Møller<img
                                         src="img/smoller_thumbnail.jpg" /></a></li>
@@ -327,7 +330,7 @@
         /*----------------------------------PREVIEW-----------------------------------------------*/
         var boxWidth = "22vw";
         var boxHeight = "calc(20vh)";
-        var boxLeft = "calc(100vw/22.25)";
+        var boxLeft = "calc(100vw/23.41)";
         var boxHome = document.getElementById("boxHome");
         var home = document.getElementById("home");
 
@@ -433,13 +436,28 @@
                 boxmoby.style.left = "50vw"
         });
 
+        var bixitbox = document.getElementById("bixitbox");
+        var bixit = document.getElementById("bixit");
+
+        bixit.addEventListener("mouseover", function () {
+                boxbixit.style.width = boxWidth;
+                boxbixit.style.height = boxHeight;
+                boxbixit.style.left = "calc(7*" + boxLeft +")";
+        });
+
+        bixit.addEventListener("mouseout", function () {
+                boxbixit.style.width = "150px";
+                boxbixit.style.height = "60px";
+                boxbixit.style.left = "50vw"
+        });
+
         var boxsmoller = document.getElementById("boxsmoller");
         var smoller = document.getElementById("smoller");
 
         smoller.addEventListener("mouseover", function () {
                 boxsmoller.style.width = boxWidth;
                 boxsmoller.style.height = boxHeight;
-                boxsmoller.style.left = "calc(7*" + boxLeft + ")";
+                boxsmoller.style.left = "calc(8*" + boxLeft + ")";
         });
 
         smoller.addEventListener("mouseout", function () {
@@ -454,7 +472,7 @@
         iso.addEventListener("mouseover", function () {
                 boxiso.style.width = boxWidth;
                 boxiso.style.height = boxHeight;
-                boxiso.style.left = "calc(8*" + boxLeft + ")";
+                boxiso.style.left = "calc(9*" + boxLeft + ")";
         });
 
         iso.addEventListener("mouseout", function () {
@@ -469,7 +487,7 @@
         motion.addEventListener("mouseover", function () {
                 boxmotion.style.width = boxWidth;
                 boxmotion.style.height = boxHeight;
-                boxmotion.style.left = "calc(9*" + boxLeft + ")";
+                boxmotion.style.left = "calc(10*" + boxLeft + ")";
         });
 
         motion.addEventListener("mouseout", function () {
@@ -484,7 +502,7 @@
         kakskiv.addEventListener("mouseover", function () {
                 boxkakskiv.style.width = boxWidth;
                 boxkakskiv.style.height = boxHeight;
-                boxkakskiv.style.left = "calc(10*" + boxLeft + ")";
+                boxkakskiv.style.left = "calc(11*" + boxLeft + ")";
         });
 
         kakskiv.addEventListener("mouseout", function () {
@@ -499,7 +517,7 @@
         pipe.addEventListener("mouseover", function () {
                 boxpipe.style.width = boxWidth;
                 boxpipe.style.height = boxHeight;
-                boxpipe.style.left = "calc(11*" + boxLeft + ")";
+                boxpipe.style.left = "calc(12*" + boxLeft + ")";
         });
 
         pipe.addEventListener("mouseout", function () {
@@ -514,7 +532,7 @@
         wingman.addEventListener("mouseover", function () {
                 boxwingman.style.width = boxWidth;
                 boxwingman.style.height = boxHeight;
-                boxwingman.style.left = "calc(12*" + boxLeft + ")";
+                boxwingman.style.left = "calc(13*" + boxLeft + ")";
         });
 
         wingman.addEventListener("mouseout", function () {
@@ -529,7 +547,7 @@
         rotfot.addEventListener("mouseover", function () {
                 boxrotfot.style.width = boxWidth;
                 boxrotfot.style.height = boxHeight;
-                boxrotfot.style.left = "calc(13*" + boxLeft + ")";
+                boxrotfot.style.left = "calc(14*" + boxLeft + ")";
         });
 
         rotfot.addEventListener("mouseout", function () {
@@ -544,7 +562,7 @@
         blaff.addEventListener("mouseover", function () {
                 boxblaff.style.width = boxWidth;
                 boxblaff.style.height = boxHeight;
-                boxblaff.style.left = "calc(14*" + boxLeft + ")";
+                boxblaff.style.left = "calc(15*" + boxLeft + ")";
         });
 
         blaff.addEventListener("mouseout", function () {
@@ -559,7 +577,7 @@
         sydney.addEventListener("mouseover", function () {
                 boxsydney.style.width = boxWidth;
                 boxsydney.style.height = boxHeight;
-                boxsydney.style.left = "calc(15*" + boxLeft + ")";
+                boxsydney.style.left = "calc(16*" + boxLeft + ")";
         });
 
         sydney.addEventListener("mouseout", function () {
@@ -574,7 +592,7 @@
         spenn.addEventListener("mouseover", function () {
                 boxspenn.style.width = boxWidth;
                 boxspenn.style.height = boxHeight;
-                boxspenn.style.left = "calc(16*" + boxLeft + ")";
+                boxspenn.style.left = "calc(17*" + boxLeft + ")";
         });
 
         spenn.addEventListener("mouseout", function () {
@@ -589,7 +607,7 @@
         lytt.addEventListener("mouseover", function () {
                 boxlytt.style.width = boxWidth;
                 boxlytt.style.height = boxHeight;
-                boxlytt.style.left = "calc(17*" + boxLeft + ")";
+                boxlytt.style.left = "calc(18*" + boxLeft + ")";
         });
 
         lytt.addEventListener("mouseout", function () {

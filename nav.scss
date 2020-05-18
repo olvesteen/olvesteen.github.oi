@@ -6,7 +6,7 @@ $preShadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
 $border: 3px solid #464646;
 
 :root {
-  --boxLeft: calc(100vw/22.25);
+  --boxLeft: calc(100vw/23.41);
 }
 
 /* Hide checkbox */
@@ -85,6 +85,11 @@ $border: 3px solid #464646;
   width: 150px;
   height: 60px;
   left: 50vw;
+}
+#boxbixit {
+  width: 50px;
+  height: 70px;
+  left: 56vw;
 }
 #boxsmoller {
   width: 290px;
@@ -179,62 +184,66 @@ $border: 3px solid #464646;
   display: block;
   left: calc(6*var(--boxLeft));
 }
+#bixit:hover img {
+  display: block;
+  left: calc(7*var(--boxLeft));
+}
 
 #smoller:hover img {
   display: block;
-  left: calc(7*var(--boxLeft));
+  left: calc(8*var(--boxLeft));
 }
 
 #iso:hover img {
   background: rgb(110,168,165);
 	background: linear-gradient(126deg, rgba(110,168,165,1) 24%, rgba(227,239,189,1) 93%); 
   display: block;
-  left: calc(8*var(--boxLeft));
+  left: calc(9*var(--boxLeft));
 }
 
 #motion:hover img {
   display: block;
-  left: calc(9*var(--boxLeft));
+  left: calc(10*var(--boxLeft));
 }
 
 #kakskiv:hover img {
   display: block;
-  left: calc(10*var(--boxLeft));
+  left: calc(11*var(--boxLeft));
 }
 
 #pipe:hover img {
   display: block;
-  left: calc(11*var(--boxLeft));
+  left: calc(12*var(--boxLeft));
 }
 
 #wingman:hover img {
   display: block;
-  left: calc(12*var(--boxLeft));
+  left: calc(13*var(--boxLeft));
 }
 
 #rotfot:hover img {
   display: block;
-  left: calc(13*var(--boxLeft));
+  left: calc(14*var(--boxLeft));
 }
 
 #blaff:hover img {
   display: block;
-  left: calc(14*var(--boxLeft));
+  left: calc(15*var(--boxLeft));
 }
 
 #sydney:hover img {
   display: block;
-  left: calc(15*var(--boxLeft));
+  left: calc(16*var(--boxLeft));
 }
 
 #spenn:hover img {
   display: block;
-  left: calc(16*var(--boxLeft));
+  left: calc(17*var(--boxLeft));
 }
 
 #lytt:hover img {
   display: block;
-  left: calc(17*var(--boxLeft));
+  left: calc(18*var(--boxLeft));
 }
 
 /* ----MAL---------
