@@ -2,6 +2,17 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: 'cindieedgy-light';
+  src: url(font/cindieedgy-light-webfont.woff2) format("woff2"), url(font/cindieedgy-light-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fs-cindieedgy-light {
+  font-family: 'cindieedgy-light';
+}
+
 .background-gradient {
   height: 100vh;
   background-color: #fddb79;
@@ -230,7 +241,8 @@
 }
 
 .galleryTextIndex {
-  font-size: 1.5rem;
+  font-family: 'cindieedgy-light','Montserrat','Roboto', sans-serif;
+  font-size: 2.2rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -249,9 +261,14 @@
   }
   .rowIndex,
   .columnIndex,
-  .boxesHome,
-  .olveDesign {
+  .boxesHome {
     display: none;
+  }
+  #olve {
+    width: 80%;
+  }
+  #olve h2 {
+    font-size: 15em;
   }
 }
 /*# sourceMappingURL=home.css.map */

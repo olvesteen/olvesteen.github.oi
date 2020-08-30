@@ -3,6 +3,18 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: 'cindieedgy-light';
+    src: url(font/cindieedgy-light-webfont.woff2) format('woff2'),
+    url(font/cindieedgy-light-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .fs-cindieedgy-light {
+    font-family: 'cindieedgy-light';
+  }
+
 $main-grey: #464646;
 $yellow: rgb(253, 219, 121);
 $preShadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
@@ -57,6 +69,7 @@ $border: 3px solid #464646;
         pointer-events: none;
     }
 }
+
 .boxesHome div
 {   position: absolute;
     top: 50vh;
@@ -217,7 +230,8 @@ $border: 3px solid #464646;
 }
 
 .galleryTextIndex {
-    font-size: 1.5rem;
+    font-family: 'cindieedgy-light','Montserrat','Roboto', sans-serif;
+    font-size: 2.2rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -238,8 +252,13 @@ $border: 3px solid #464646;
 
     .rowIndex,
     .columnIndex,
-    .boxesHome,
-    .olveDesign {
+    .boxesHome {
         display: none;
+    }
+    #olve {
+        width: 80%;
+        & h2 {
+            font-size: 15em;
+        }
     }
 }
