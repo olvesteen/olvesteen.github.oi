@@ -2,6 +2,32 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.fontself.com/lE2deLa/cindieedgy-regular.css');
+@import url('https://fonts.fontself.com/lE2deLa/cindieedgy-light.css');
+
+/* ------ testing font --------------*
+@font-face {
+  font-family: 'cindieedgy-regular';
+  src: url(font/cindieedgy-regular-webfont.woff2) format('woff2'),
+  url(font/cindieedgy-regular-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fs-cindieedgy-regular {
+  font-family: 'cindieedgy-regular';
+}
+
+@font-face {
+  font-family: 'cindieedgy-light';
+  src: url(font/cindieedgy-light-webfont.woff2) format('woff2'),
+  url(font/cindieedgy-light-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fs-cindieedgy-light {
+  font-family: 'cindieedgy-light';
+}
 
 /* ---------------------------------------variabels---------------------------------------------------------------*/
 $main-grey: #464646;
@@ -60,14 +86,14 @@ $shadowActive: 9px 5px 18px rgba(0, 0, 0, 0.6);
 }
 
 .btnProduct {
-  top: 76px;
+  top: 74px;
   -webkit-box-shadow: -20px 108px $shadowBtn;
     -moz-box-shadow: -20px 108px $shadowBtn;
     box-shadow: -20px 98px $shadowBtn;
 }
 
 .btnGraphic {
-  top: 134px;
+  top: 128px;
   -webkit-box-shadow: -20px 40px $shadowBtn;
     -moz-box-shadow: -20px 40px $shadowBtn;
     box-shadow: -20px 40px $shadowBtn;
@@ -112,13 +138,18 @@ img.navpic {
   display: none;
 }
 
-h1, h2, li a, .btn {
+h1, h2{
   font-family: 'cindieedgy-regular','Montserrat','Roboto', sans-serif;
+  font-weight: normal;
+}
+
+li a, .btn {
+  font-family: 'cindieedgy-light','Montserrat','Roboto', sans-serif;
+  font-weight: normal;
 }
 
 h1 {
   font-size: 5rem;
-  font-weight: 700;
   color: $main-grey;
 }
 

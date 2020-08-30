@@ -40,12 +40,10 @@ $border: 3px solid #464646;
 #olve {
     height: 15vh;
     top: 35vh;
-    outline: $border;
+    //outline: $border;
     & h2 {
         color: $main-grey;
         font-size: 7em;
-        font-weight: 200;
-        pointer-events: none;
     }
 }
 #design {

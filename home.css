@@ -37,14 +37,11 @@
 #olve {
   height: 15vh;
   top: 35vh;
-  outline: 3px solid #464646;
 }
 
 #olve h2 {
   color: #464646;
   font-size: 7em;
-  font-weight: 200;
-  pointer-events: none;
 }
 
 #design {
