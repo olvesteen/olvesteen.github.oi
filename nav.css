@@ -40,6 +40,7 @@
 #home:hover img {
   display: block;
   left: 0;
+  background-color: #fddb79;
 }
 
 #boxHome {
