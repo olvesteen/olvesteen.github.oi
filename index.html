@@ -10066,13 +10066,14 @@
     <div id="nav-placeholder">
     </div>
 
-    <div class="arrow">
+    <!--div class="arrow">
         <img src="img/arrow.svg" class="vertical-center" alt="arrow" style="z-index: -1;">
-    </div>
+    </div-->
     <div class="olveDesign">
-        <div id="olve">
+        <!--div id="olve">
             <h2>olve design</h2>
-        </div>
+        </div-->
+        <div id="logoAnimation"></div>
     </div>
     <!--div id="mobAnimation">
     </div-->
@@ -10235,7 +10236,27 @@
             element.classList.add("active");
         }
     </script>
-    <!---------------------Mob Animation----------------------------->
+
+    <!---------------------Logo Animation----------------------------->
+    <script src="animation/lottie.js"></script>
+    <script>
+        /* Play an animation on each click */
+        let iconSkipForward = document.getElementById('logoAnimation');
+
+        let animationSkipForward = bodymovin.loadAnimation({
+            container: iconSkipForward,
+            renderer: 'svg',
+            loop: false,
+            autoplay: true,
+            path: "animation/logo-reversed.json"
+        });
+
+        iconSkipForward.addEventListener('click', function () {
+            animationSkipForward.playSegments([0, 239], true);
+        });
+    </script>
+
+    <!---------------------Mob Animation-----------------------------
     <script src="animation/lottie.js"></script>
     <script>
         /* Play an animation on each click */
@@ -10252,7 +10273,7 @@
         iconSkipForward.addEventListener('click', function () {
             animationSkipForward.playSegments([0, 60], true);
         });
-    </script>
+    </script -->
     <!--end of Navigation bar-->
 </body>
 
