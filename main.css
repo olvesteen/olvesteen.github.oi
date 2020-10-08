@@ -438,6 +438,7 @@ img.vertical-pic {
     margin-right: 10rem;
   }
   .left-half img, .right-half img {
+    height: 100%;
     width: 50vw;
   }
   #slim {
@@ -516,8 +517,7 @@ img.vertical-pic {
     margin: 2rem;
   }
   .left-half img, .right-half img {
-    -o-object-fit: contain;
-       object-fit: contain;
+    height: 100%;
     width: 100%;
   }
   div {
