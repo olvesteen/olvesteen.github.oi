@@ -276,6 +276,7 @@ div {
 .left-half img, .right-half img {
   -o-object-fit: contain;
      object-fit: contain;
+  height: 100%;
   width: 60vw;
 }
 
