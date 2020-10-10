@@ -9852,7 +9852,7 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
     </section>
     <secton class="container whitespace">
         <div class="left-half">
-            <img style="max-height: 90vh;" src="img/smoller_pat.jpg" alt="Woopsi, det skulle visst vært et bilde her.">
+            <img src="img/smoller_pat.jpg" alt="Woopsi, det skulle visst vært et bilde her." class="vertical-pic shadow-low">
         </div>
         <div class="right-half">
             <p class="lighter">I mars 2017 hadde bandet et prosjekt hvor vi spilte låter av den kjente jazz-gitaristen Pat Metheny,
@@ -9877,16 +9877,28 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
     <section class="container" >
 		<div class="left-half last">
 			<p class="lighter">Den røffe tusj-skissen har et dynamisk, energisk og nesten pulserende uttrykk, 
-				som representerer musikken i prosjektet godt. Fargene er inspirert av UKA-palleten. 
-				Dette formatet er tiltenkt LP-coveret (310x310mm).</p>
+				som representerer musikken i prosjektet godt. Fargene er inspirert av UKA-palleten.</p>
 		</div>
         <div class="right-half first">
             <img src="img/smoller_back.svg" class="shadow-low" alt="Woopsi, det skulle visst vært et bilde her.">
         </div>
-    </section>
-    <secton class="container whitespace">
+	</section>
+	<section class="container whitespace" >
+		<div class="left-half last">
+			<img src="img/smoller_albumFront.jpg" alt="Album cover" class="shadow-low">
+		</div>
+	</section>
+	<section class="container">
+		<div class="left-half">
+			<p></p>
+		</div>
+		<div class="right-half last">
+			<img src="img/smoller_back.jpg" alt="Album cover" class="shadow-low">
+		</div>
+	</section>
+    <section class="container whitespace">
         <div class="left-half">
-            <img style="max-width: 60vh; padding-top: 100px" src="img/smoller_visittkort.svg" alt="Woopsi, det skulle visst vært et bilde her.">
+            <img style="padding-top: 100px" src="img/smoller_visittkort.svg" alt="Woopsi, det skulle visst vært et bilde her." class="vertical-pic">
         </div>
         <div class="right-half">
             <p class="lighter">Storbandet spiller ofte opp til dans på arrangement og konferanser. I slike anledninger er det fint å
@@ -9894,10 +9906,24 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
                 glanstrykk mot det matte lilla kortet. Den grafiske illustrasjonen på baksiden spiller på det enkle og
                 lekne uttrykket til logoen.</p>
         </div>
-    </secton>
-    <div class="widescreen">
-        <img style="margin-top: 0" src="img/smoller_band.svg" alt="Woopsi, det skulle visst vært et bilde her.">
-    </div>
+	</section>
+	<section style="background-color: #291F3B;"> 
+		<div style="height: 100vh;" id="band1">
+		</div>
+	</section>
+  
+	
+	<script src="animation/lottie.js"></script>
+	<script>
+		var animation = bodymovin.loadAnimation({
+			container: document.getElementById("band1"),
+			renderer: "svg",
+			loop: true,
+			autoplay: true,
+			path: "animation/smoller1.json"
+		})
+	</script>
+
 </body>
 
 </html>

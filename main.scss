@@ -180,7 +180,7 @@ ul {
 li a {
   display: flex;
   color: white;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   text-decoration: none;
 }
@@ -422,7 +422,7 @@ img.vertical-pic {
 
 /* Media Queries
 ------------------------------------------------------------------------ */
-/*widescreen*/
+/*--------------widescreen----------------------------------------------*/
 @media (min-aspect-ratio: 16 / 9) {
   .left-half {
     margin-left: 8rem;

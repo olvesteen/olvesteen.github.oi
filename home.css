@@ -16,56 +16,11 @@
 .background-gradient {
   height: 100vh;
   background-color: #fddb79;
-  /* transition the background-color over 1s with a linear animation 
-    transition: background-color 5s cubic-bezier(0, 0, 0.25, 1);
-    &:hover {
-      background-color: #F4D873;
-    }
-    /* the :hover that causes the background-color to change */
 }
 
 .olveDesign {
   height: 100vh;
   width: 100%;
-}
-
-#olve,
-#design {
-  text-align: center;
-  position: absolute;
-  display: block;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-          flex-direction: column !important;
-  width: 30%;
-  pointer-events: none;
-}
-
-#olve {
-  height: 15vh;
-  top: 35vh;
-}
-
-#olve h2 {
-  color: #464646;
-  font-size: 7em;
-}
-
-#design {
-  top: 50vh;
-  z-index: 2;
-}
-
-#design h2 {
-  padding-top: 1vh;
-  color: #fddb79;
-  font-size: 5em;
-  font-weight: 300;
-  pointer-events: none;
 }
 
 .boxesHome div {
@@ -251,24 +206,23 @@
   text-align: center;
 }
 
+/*-----------------------ipad---------------------------*/
 @media (max-aspect-ratio: 9 / 7) {
   .arrow {
     display: none;
-  }
-  #mobAnimation {
-    display: block;
-    height: 100vh;
   }
   .rowIndex,
   .columnIndex,
   .boxesHome {
     display: none;
   }
-  #olve {
-    width: 80%;
-  }
-  #olve h2 {
-    font-size: 15em;
+  .olveDesign {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 /*# sourceMappingURL=home.css.map */
