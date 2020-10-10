@@ -9818,62 +9818,54 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 
     <section class="container whitespace">
         <div class="left-half">
-            <img style="width: 90vw;" src="img/birdsview_iconAndText.svg" alt="BirdsView" class="z-front">
+            <img style="width: 90vw;" src="img/birdsview_textAndIcon.svg" alt="BirdsView" class="z-front">
         </div>
     </section>
     <section class="container">
         <div class="left-half">
             <p>Jeg gikk inn i Birdsview sommeren 2018, som designer. Før dette hadde jeg designet logoen og den grafiske
-                profilen til oppstartsbedriften. Birdsview utvikler en revolusjonerende analysetjeneste for trestolper.
-                Ved hjelp av radarteknologi utvikler vi en fullstendig analysetjeneste for trestolper, som er enkel og
-                presis i bruk. Jeg har ansvaret for designet av selve skanneren og produksjonen av den,
-				brukergrensesnittet til tilhørende app og nettside, 
-				samt <a href="https://www.birdsview.no/" target="_blank">hjemmesiden</a> vår og generelt grafisk arbeid. 
-				Hele pakka med andre ord.</p>
+				profilen til oppstartsbedriften. Birdsview utvikler en revolusjonerende analysetjeneste for trestolper. 
+				Jeg har ansvaret for blant annet designet av <a href= "skanner.html">skanneren</a>,
+				brukergrensesnittet til tilhørende app, 
+				samt generelt grafisk arbeid. Sjekk oss ut på <a href="https://www.birdsview.no/" target="_blank">birdsview.no</a>.</p>
+		</div>
+		<div class="right-half" id="birdstory"></div>
     </section>
-    <section class="container whitespace" style="padding-bottom: 0;">
-        <div class="left-half">
-            <img src="img/birdsview_gutta.png" style="width: 90vw;" alt="BirdsView">
+	<section class="container whitespace">
+		<div style="background-color: #EBF0FE;" class="left-half last">
+			<img src="img/birdsview_woodpecker.gif" alt="BirdsView" class="vertical-pic">
         </div>
+		<div class="right-half first">
+			<p>Jeg lagde en serie animasjoner for å illustrere hva vi driver med i Birdsview.</p>
+		</div>
     </section>
-    <section class="container">
-        <div class="left-half">
-            <p>Vi er seks tverrfaglige studenter fra NTNU Gløshaugen på teamet, som har et bemerkelsesverdig godt
-                jobbmiljø som motiverer mer enn noe annet. </p>
-        </div>
-    </section>
-    <section class="container whitespace" style="padding-bottom: 0;">
-        <div style="background-color: #EBF0FE;" class="left-pic">
-            <img src="img/birdsview_woodpecker.gif" alt="BirdsView">
-        </div>
-        <div style="background-color: #EBF0FE;" class="right-pic" id="dipper">
-            <img src="img/birdsview_dipper.gif" alt="BirdsView">
-        </div>
-    </section>
-    <section class="container shadow-low" style="background-color: #1B3760; height: 70vh;">
-        <div style="align-items: center" class="left-half">
-            <p style="color: #EBF0FE;">Brukerreisen er laget i Adobe After Effects. Her kan vi se en skanneren i aksjon.
-                Jeg har fokusert mye på hvordan strekmennene skal fremstå og hvilken følelse brukeren skal sitte igjen
-                med etter å ha sett dem. </p>
-        </div>
-    </section>
-    <section class="container" style="margin-top: 20vh; padding-bottom: 0;">
-        <div class="left-pic extra-margin-bottom">
+	<section class="container" >
+
+        <div class="left-half" style="margin-bottom: 0rem;">
             <img id="slim" src="img/birdsview_app.gif" alt="BirdsView">
         </div>
-        <div class="right-pic" >
-            <img id="slim" src="img/birdsview_map.gif" alt="BirdsView">
-        </div>
-    </section>
-    <section class="container" style="background-color: #1B3760; height: 70vh;">
-        <div style="align-items: center" class="left-half">
-            <p style="color: #EBF0FE;">Etter at stolpen er skannet blir signalet prosessert og lagret, slik at de på
-                kontoret kan ta del i analysen. Her prøver jeg å bevare den lystige og bekymringsfrie tonen.</p>
+        <div class="right-half" style="margin-bottom: 0rem;">
+            <img id="slim" src="img/birdsview_map.gif" alt="BirdsView" >
         </div>
     </section>
     <div class="widescreen" style="margin-top: -1px;">
-        <img style="margin-top: 0" src="img/birdsview_pole.jpg" alt="BirdsView">
-    </div>
+        <img style="margin-top: 0" src="img/birdsview_pole.jpg" alt="BirdsView" class="frame">
+	</div>
+	
+<!-----------------------Animation----------------------->
+
+<script src="animation/lottie.js"></script>
+
+	<script>
+		var animation = bodymovin.loadAnimation({
+			container: document.getElementById("birdstory"),
+			renderer: "svg",
+			loop: true,
+			autoplay: true,
+			path: "animation/birdstory.json"
+		})
+	</script>
+
 </body>
 
 </html>
