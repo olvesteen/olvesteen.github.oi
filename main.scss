@@ -8,7 +8,7 @@
 @font-face {
   font-family: 'cindieedgy-regular';
   src: url(font/cindieedgy-regular-webfont.woff2) format('woff2'),
-  url(font/cindieedgy-regular-webfont.woff) format('woff');
+    url(font/cindieedgy-regular-webfont.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -20,7 +20,7 @@
 @font-face {
   font-family: 'cindieedgy-light';
   src: url(font/cindieedgy-light-webfont.woff2) format('woff2'),
-  url(font/cindieedgy-light-webfont.woff) format('woff');
+    url(font/cindieedgy-light-webfont.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,6 +34,7 @@ $main-grey: #464646;
 $yellow: rgb(253, 219, 121);
 $preShadow: -160px 160px 100px rgba(0, 0, 0, 0.3);
 $border: 3px solid #464646;
+
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +43,7 @@ $border: 3px solid #464646;
 body {
   height: 100vh;
 }
+
 /* ---------------------------------------filter button (Alle, Produkt, Grafisk)---------------------------------------------------------------*/
 
 .filterDiv {
@@ -62,7 +64,6 @@ body {
   z-index: 7;
   cursor: pointer;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   background: $main-grey;
   padding: 20px;
@@ -72,6 +73,7 @@ body {
   transition: all 0.4s ease 0s;
   position: fixed;
   right: 20px;
+  width: 6rem;
 }
 
 $shadowBtn: 48px rgba(0, 0, 0, 0.4);
@@ -80,33 +82,34 @@ $shadowActive: 9px 5px 18px rgba(0, 0, 0, 0.6);
 
 .btnAlle {
   top: 20px;
-  -webkit-box-shadow: -20px 78px $shadowBtn;
-    -moz-box-shadow: -20px 78px $shadowBtn;
-    box-shadow: -20px 154px $shadowBtn;
 }
 
 .btnProduct {
   top: 74px;
-  -webkit-box-shadow: -20px 108px $shadowBtn;
-    -moz-box-shadow: -20px 108px $shadowBtn;
-    box-shadow: -20px 98px $shadowBtn;
 }
 
 .btnGraphic {
   top: 128px;
+}
+
+.btnAlle,
+.btnProduct,
+.btnGraphic {
   -webkit-box-shadow: -20px 40px $shadowBtn;
-    -moz-box-shadow: -20px 40px $shadowBtn;
-    box-shadow: -20px 40px $shadowBtn;
+  -moz-box-shadow: -20px 40px $shadowBtn;
+  box-shadow: -20px 40px $shadowBtn;
 }
 
 .btn {
+
   /* change shawow on mouse-over */
   &:hover {
     -webkit-box-shadow: $shadowMouseOver;
     -moz-box-shadow: $shadowMouseOver;
     box-shadow: $shadowMouseOver;
   }
-/* change shadow to the active button */
+
+  /* change shadow to the active button */
   &.active {
     -webkit-box-shadow: $shadowActive;
     -moz-box-shadow: $shadowActive;
@@ -134,21 +137,25 @@ img.navpic {
   /*scale when hover? a little bit?*/
 }
 
-#navMob-pic, #navTab-pic {
+#navMob-pic,
+#navTab-pic {
   display: none;
 }
 
-h1, h2{
-  font-family: 'cindieedgy-regular','Montserrat','Roboto', sans-serif;
+h1,
+h2 {
+  font-family: 'cindieedgy-regular', 'Montserrat', 'Roboto', sans-serif;
   font-weight: normal;
 }
+
 h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
-li a, .btn {
-  font-family: 'cindieedgy-light','Montserrat','Roboto', sans-serif;
+li a,
+.btn {
+  font-family: 'cindieedgy-light', 'Montserrat', 'Roboto', sans-serif;
   font-weight: normal;
 }
 
@@ -165,6 +172,7 @@ p {
   max-width: 700px;
   max-height: 999999px;
 }
+
 p a {
   color: $main-grey;
 }
@@ -221,15 +229,19 @@ img.size-web {
   max-width: 100%;
   z-index: -2;
 }
+
 .frame {
   outline: $border;
 }
+
 .z-front {
   z-index: 5;
 }
+
 .z-back {
   z-index: 0;
 }
+
 #butterfly {
   position: absolute;
   height: 45vh;
@@ -237,6 +249,7 @@ img.size-web {
   top: 20vh;
   right: 0;
 }
+
 .lighter {
   color: lightgray;
 }
@@ -261,12 +274,14 @@ div {
   margin: 15vh 0;
 }
 
-.left-half, .right-half {
+.left-half,
+.right-half {
   flex: 1;
   margin: 3rem;
 }
 
-.left-half img, .right-half img {
+.left-half img,
+.right-half img {
   object-fit: contain;
   height: 100%;
   width: 60vw;
@@ -284,12 +299,14 @@ section div:first-child {
   flex-direction: row;
 }
 
-.left-pic, .right-pic {
+.left-pic,
+.right-pic {
   flex: 1;
   flex-direction: row;
 }
 
-.left-pic img, .right-pic img {
+.left-pic img,
+.right-pic img {
   height: auto;
   width: 40vw;
   object-fit: contain;
@@ -325,28 +342,32 @@ section div:first-child {
   box-shadow: 40px -40px 30px rgba(0, 0, 0, 0.3);
 }
 
-.shadow-left, .shadow-right {
+.shadow-left,
+.shadow-right {
   -webkit-box-shadow: 0px 0px rgba(255, 200, 0, 0.5);
   -moz-box-shadow: 0px 0px rgba(255, 200, 0, 0.5);
   box-shadow: 0px 0px rgba(255, 200, 0, 0.5);
   transition: 0.5s;
 }
 
-.shadow-left-gray, .shadow-right-gray {
+.shadow-left-gray,
+.shadow-right-gray {
   -webkit-box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
 
-.shadow-left-white, .shadow-right-white {
+.shadow-left-white,
+.shadow-right-white {
   -webkit-box-shadow: 0px 0px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0px 0px rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px rgba(255, 255, 255, 0.5);
   transition: 0.5s;
 }
 
-.shadow-left-red, .shadow-right-red {
+.shadow-left-red,
+.shadow-right-red {
   -webkit-box-shadow: 0px 0px #770002;
   -moz-box-shadow: 0px 0px #770002;
   box-shadow: 0px 0px #770002;
@@ -441,7 +462,8 @@ img.vertical-pic {
     margin-right: 10rem;
   }
 
-  .left-half img, .right-half img {
+  .left-half img,
+  .right-half img {
     height: 100%;
     width: 50vw;
   }
@@ -489,9 +511,11 @@ img.vertical-pic {
       object-fit: cover;
     }
   }
-#butterfly {
-  display: none;
-}
+
+  #butterfly {
+    display: none;
+  }
+
   .size-web {
     height: 0 !important;
     width: 0 !important;
@@ -501,7 +525,8 @@ img.vertical-pic {
     margin-bottom: 20rem;
   }
 
-  #nav-pic, #navMob-pic {
+  #nav-pic,
+  #navMob-pic {
     display: none;
   }
 
@@ -519,19 +544,23 @@ img.vertical-pic {
     padding: 0 2rem;
     max-width: unset;
   }
+
   #home {
     padding-top: 100px;
   }
+
   #lytt {
     padding-bottom: 100px;
   }
 
-  .left-half, .right-half {
+  .left-half,
+  .right-half {
     flex: 1;
     margin: 2rem;
   }
 
-  .left-half img, .right-half img {
+  .left-half img,
+  .right-half img {
     //object-fit: contain;
     height: 100%;
     width: 100%;
@@ -573,7 +602,8 @@ img.vertical-pic {
     margin-top: 1rem;
   }
 
-  .left-pic img, .right-pic img {
+  .left-pic img,
+  .right-pic img {
     width: 70vw;
   }
 
@@ -581,7 +611,8 @@ img.vertical-pic {
     font-size: 8rem;
   }
 
-  p, li a {
+  p,
+  li a {
     font-size: 2rem;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
@@ -594,6 +625,7 @@ img.vertical-pic {
     font-size: 25px;
     width: 20vw;
   }
+
   $shadowBtnMob: -20px 25px 35px rgba(0, 0, 0, 0.4);
 
   .btnAlle {
@@ -603,7 +635,7 @@ img.vertical-pic {
     -webkit-box-shadow: $shadowBtnMob;
     -moz-box-shadow: $shadowBtnMob;
     box-shadow: $shadowBtnMob;
- 
+
   }
 
   .btnProduct {
@@ -623,14 +655,19 @@ img.vertical-pic {
     -moz-box-shadow: $shadowBtnMob;
     box-shadow: $shadowBtnMob;
   }
+
   input[type=checkbox]:checked~.btn {
     display: block;
-  }//funker ikke ... enda...
+  }
+
+  //funker ikke ... enda...
 }
 
 /* ----------------------------------------------------phone size ------------------------------------------------------------------*/
 @media (max-aspect-ratio: 6 / 8) {
-  #nav-pic, #navTab-pic {
+
+  #nav-pic,
+  #navTab-pic {
     display: none;
   }
 
@@ -639,7 +676,8 @@ img.vertical-pic {
     bottom: -7%;
   }
 
-  p, li a {
+  p,
+  li a {
     font-size: 3rem;
   }
 
