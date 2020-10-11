@@ -137,7 +137,7 @@ h3 {
 }
 
 li a,
-.btn {
+.btn, p.filterDiv {
   font-family: 'cindieedgy-light', 'Montserrat', 'Roboto', sans-serif;
   font-weight: normal;
 }

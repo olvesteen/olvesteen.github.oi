@@ -154,7 +154,7 @@ h3 {
 }
 
 li a,
-.btn {
+.btn, p.filterDiv {
   font-family: 'cindieedgy-light', 'Montserrat', 'Roboto', sans-serif;
   font-weight: normal;
 }
@@ -168,7 +168,6 @@ p {
   font-family: 'Roboto', sans-serif;
   color: $main-grey;
   font-size: 19px;
-  //padding: 3rem;
   max-width: 700px;
   max-height: 999999px;
 }
@@ -176,6 +175,7 @@ p {
 p a {
   color: $main-grey;
 }
+
 
 ul {
   display: flex;
