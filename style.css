@@ -202,7 +202,11 @@ h4 {
   font-size: 1.6em;
 }
 
-p, q, li, ol, ul {
+p,
+q,
+li,
+ol,
+ul {
   font-size: 22px;
   font-weight: 500;
 }
@@ -404,6 +408,9 @@ q {
   h1 {
     font-size: 9em;
   }
+  header h1 {
+    font-size: 8em;
+  }
   h4 {
     font-size: 3em;
   }
@@ -415,7 +422,11 @@ q {
     font-size: 3em;
     font-weight: 600;
   }
-  p, q, li, ol, ul {
+  p,
+  q,
+  li,
+  ol,
+  ul {
     font-size: 40px;
   }
   #cv p {
@@ -434,8 +445,11 @@ q {
   #pagecontent {
     width: 100%;
   }
+  .projectlink {
+    max-height: 60vh;
+  }
   .projectlink img {
-    min-height: 40vh;
+    min-height: 60vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
