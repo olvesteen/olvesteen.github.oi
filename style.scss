@@ -496,6 +496,10 @@ q {
         font-size: 3em;
     }
 
+    #cv h4 {
+        font-size: 2.5em;
+    }
+
     h3 {
         margin: 0;
         font-size: 3em;
@@ -503,7 +507,11 @@ q {
     }
 
     p, q, li, ol, ul {
-        font-size: 36px;
+        font-size: 40px;
+    }
+
+    #cv p {
+max-width: 100%;
     }
 
     #intro h3 {
