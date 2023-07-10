@@ -4,17 +4,17 @@
 
 
 /* ------ importing my own font --------------*/
-@font-face {
-    font-family: 'cindieedgy-regular';
-    src: url(font/cindieedgy-regular-webfont.woff2) format('woff2'),
-        url(font/cindieedgy-regular-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'cindieedgy-regular';
+//     src: url(font/cindieedgy-regular-webfont.woff2) format('woff2'),
+//         url(font/cindieedgy-regular-webfont.woff) format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-.fs-cindieedgy-regular {
-    font-family: 'cindieedgy-regular';
-}
+// .fs-cindieedgy-regular {
+//     font-family: 'cindieedgy-regular';
+// }
 
 @font-face {
     font-family: 'cindieedgy-light';
@@ -493,7 +493,7 @@ q {
     }
 
     h1 {
-        font-size: 9em;
+        font-size: 11em;
     }
 
     header h1 {
@@ -559,6 +559,10 @@ q {
 
     .btn {
         font-size: 4em;
+    }
+
+    .motion {
+        height: 60vh;
     }
 
 }

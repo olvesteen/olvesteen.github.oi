@@ -3,16 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* ------ importing my own font --------------*/
 @font-face {
-  font-family: "cindieedgy-regular";
-  src: url(font/cindieedgy-regular-webfont.woff2) format("woff2"), url(font/cindieedgy-regular-webfont.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-.fs-cindieedgy-regular {
-  font-family: "cindieedgy-regular";
-}
-
-@font-face {
   font-family: "cindieedgy-light";
   src: url(font/cindieedgy-light-webfont.woff2) format("woff2"), url(font/cindieedgy-light-webfont.woff) format("woff");
   font-weight: normal;
@@ -406,7 +396,7 @@ q {
     width: 100%;
   }
   h1 {
-    font-size: 9em;
+    font-size: 11em;
   }
   header h1 {
     font-size: 8em;
@@ -458,5 +448,8 @@ q {
   }
   .btn {
     font-size: 4em;
+  }
+  .motion {
+    height: 60vh;
   }
 }/*# sourceMappingURL=style.css.map */
