@@ -193,11 +193,11 @@ h4 {
   font-size: 1.6em;
 }
 
-p,
-q,
-li,
-ol,
-ul {
+#cv p,
+#cv q,
+#cv li,
+#cv ol,
+#cv ul {
   font-size: 22px;
   font-weight: 500;
 }
@@ -413,16 +413,6 @@ q {
     font-size: 3em;
     font-weight: 600;
   }
-  p,
-  q,
-  li,
-  ol,
-  ul {
-    font-size: 40px;
-  }
-  #cv p {
-    max-width: 100%;
-  }
   #intro h3 {
     width: 100%;
   }
@@ -445,6 +435,16 @@ q {
        object-fit: cover;
   }
   #cv img {
+    max-width: 100%;
+  }
+  #cv p,
+  #cv q,
+  #cv li,
+  #cv ol,
+  #cv ul {
+    font-size: 40px;
+  }
+  #cv p {
     max-width: 100%;
   }
   .btn {

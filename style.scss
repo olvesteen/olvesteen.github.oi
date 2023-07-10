@@ -241,14 +241,18 @@ h4 {
     font-size: 1.6em;
 }
 
-p,
-q,
-li,
-ol,
-ul {
-    font-size: 22px;
-    font-weight: 500;
+#cv {
+
+    & p,
+    q,
+    li,
+    ol,
+    ul {
+        font-size: 22px;
+        font-weight: 500;
+    }
 }
+
 
 q {
     font-style: italic;
@@ -515,18 +519,6 @@ q {
         font-weight: 600;
     }
 
-    p,
-    q,
-    li,
-    ol,
-    ul {
-        font-size: 40px;
-    }
-
-    #cv p {
-        max-width: 100%;
-    }
-
     #intro h3 {
         width: 100%;
     }
@@ -544,7 +536,7 @@ q {
 
     .projectlink {
 
-       max-height: 50vh;
+        max-height: 50vh;
 
         & img {
             min-height: 60vh;
@@ -554,6 +546,18 @@ q {
 
     #cv {
         & img {
+            max-width: 100%;
+        }
+
+        & p,
+        q,
+        li,
+        ol,
+        ul {
+            font-size: 40px;
+        }
+
+        & p {
             max-width: 100%;
         }
     }
