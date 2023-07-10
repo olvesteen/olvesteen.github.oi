@@ -198,12 +198,16 @@ h3 {
   max-width: 900px;
 }
 
-p {
+h4 {
+  font-size: 1.6em;
+}
+
+p, q, li, ol, ul {
+  font-size: 22px;
   font-weight: 500;
 }
 
 q {
-  font-size: 1.2em;
   font-style: italic;
   font-weight: 300;
   max-width: 50%;
@@ -223,7 +227,6 @@ q {
   margin: 100px auto;
 }
 #pagecontent .heading h4 {
-  font-size: 1.6em;
   width: 100%;
   margin: 0;
   font-weight: 700;
@@ -262,19 +265,11 @@ q {
   font-weight: 400;
 }
 #cv h4 {
-  font-size: 1.2em;
   font-weight: 700;
   text-align: right;
 }
 #cv p {
   max-width: 700px;
-}
-#cv p,
-#cv ul,
-#cv li {
-  font-size: 22px;
-  line-height: 28px;
-  font-weight: 500;
 }
 #cv ul a,
 #cv p a {
@@ -409,10 +404,16 @@ q {
   h1 {
     font-size: 9em;
   }
+  h4 {
+    font-size: 3em;
+  }
   h3 {
     margin: 0;
     font-size: 3em;
     font-weight: 600;
+  }
+  p, q, li, ol, ul {
+    font-size: 36px;
   }
   #intro h3 {
     width: 100%;
@@ -435,10 +436,7 @@ q {
   #cv img {
     max-width: 100%;
   }
-  #cv p,
-  #cv li,
-  #cv ol,
-  #cv ul {
-    font-size: 2.5em;
+  .btn {
+    font-size: 3em;
   }
 }/*# sourceMappingURL=style.css.map */
