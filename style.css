@@ -397,7 +397,7 @@ q {
     width: 94%;
   }
   .projecttitle h2 {
-    font-size: 3em;
+    font-size: 4em;
   }
   h3,
   p,
@@ -446,7 +446,7 @@ q {
     width: 100%;
   }
   .projectlink {
-    max-height: 60vh;
+    max-height: 50vh;
   }
   .projectlink img {
     min-height: 60vh;
@@ -457,6 +457,6 @@ q {
     max-width: 100%;
   }
   .btn {
-    font-size: 3em;
+    font-size: 4em;
   }
 }/*# sourceMappingURL=style.css.map */
