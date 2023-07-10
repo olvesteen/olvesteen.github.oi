@@ -89,7 +89,7 @@ footer h3:hover {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 28px;
   line-height: 1.4em;
 }
 h3 a {
@@ -153,7 +153,7 @@ img {
 }
 .projecttitle h2 {
   font-family: "cindieedgy-light", "Inter", "Montserrat", Arial, sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   margin: 10px 20px;
   font-weight: 100;
 }
@@ -404,11 +404,11 @@ q {
     width: 100%;
   }
   h1 {
-    font-size: 6.5em;
+    font-size: 112px;
   }
   h3 {
     margin: 0;
-    font-size: 2em;
+    font-size: 32px;
     font-weight: 600;
   }
   #intro h3 {
