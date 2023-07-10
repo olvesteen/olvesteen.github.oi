@@ -397,6 +397,9 @@ q {
   .container {
     width: 94%;
   }
+  .projecttitle h2 {
+    font-size: 3em;
+  }
   h3,
   p,
   img,
@@ -404,11 +407,11 @@ q {
     width: 100%;
   }
   h1 {
-    font-size: 112px;
+    font-size: 9em;
   }
   h3 {
     margin: 0;
-    font-size: 32px;
+    font-size: 3em;
     font-weight: 600;
   }
   #intro h3 {
@@ -431,5 +434,11 @@ q {
   }
   #cv img {
     max-width: 100%;
+  }
+  #cv p,
+  #cv li,
+  #cv ol,
+  #cv ul {
+    font-size: 2.5em;
   }
 }/*# sourceMappingURL=style.css.map */
