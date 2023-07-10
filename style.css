@@ -176,6 +176,7 @@ q {
 
 h1 {
   font-family: "cindieedgy-light", "Inter", "Montserrat", Arial, sans-serif;
+  font-weight: 400;
   font-size: 15em;
   max-width: 100%;
   margin-right: 10px;
