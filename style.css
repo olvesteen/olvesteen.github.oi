@@ -413,6 +413,9 @@ q {
     font-size: 3em;
     font-weight: 600;
   }
+  h3 a {
+    font-size: 48px;
+  }
   #intro h3 {
     width: 100%;
   }
