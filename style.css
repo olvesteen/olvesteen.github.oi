@@ -42,7 +42,7 @@ header h1 {
   font-size: 5em;
 }
 header img {
-  height: 60px;
+  width: 60px;
   margin-left: 10px;
 }
 
@@ -256,6 +256,11 @@ q {
   height: 100vh;
 }
 
+.left {
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
 /* ---------------------------------------CV---------------------------------------------------------------*/
 #cv section {
   margin-bottom: 25vh;
@@ -413,6 +418,9 @@ q {
   }
   header h1 {
     font-size: 8em;
+  }
+  header img {
+    width: 100px;
   }
   h4 {
     font-size: 3em;
