@@ -58,15 +58,16 @@ footer {
 }
 
 header {
+    top: 0;
+
     & h1 {
         margin: 15px 25px;
         font-size: 5em;
-        // text-align: right;
     }
 
     & img {
-        height: 5.1em;
-        right: 0;
+        height: 60px;
+        margin-left: 10px;
     }
 }
 
@@ -81,6 +82,11 @@ footer h3 {
         color: $color-faded;
         cursor: default;
     }
+}
+
+#home {
+    height: 5vh;
+    margin-top: -5px;
 }
 
 
@@ -280,7 +286,7 @@ q {
     }
 
     & .heading {
-        margin: 100px auto;
+        margin: 20vh auto;
 
         & h4 {
             width: 100%;
@@ -353,7 +359,7 @@ q {
     }
 
     & .heading {
-        height: 100vh;
+        height: 70vh;
     }
 
 }
@@ -513,10 +519,6 @@ q {
         font-size: 3em;
     }
 
-    #cv h4 {
-        font-size: 2.5em;
-    }
-
     h3 {
         margin: 0;
         font-size: 3em;
@@ -563,6 +565,12 @@ q {
 
         & p {
             max-width: 100%;
+        }
+        & h4 {
+            font-size: 2.5em;
+        }
+        & h1 {
+            font-size: 40em;
         }
     }
 

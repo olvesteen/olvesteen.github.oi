@@ -34,13 +34,16 @@ footer {
   width: 100%;
 }
 
+header {
+  top: 0;
+}
 header h1 {
   margin: 15px 25px;
   font-size: 5em;
 }
 header img {
-  height: 5.1em;
-  right: 0;
+  height: 60px;
+  margin-left: 10px;
 }
 
 footer h3 {
@@ -52,6 +55,11 @@ footer h3 {
 footer h3:hover {
   color: rgba(0, 0, 0, 0.2);
   cursor: default;
+}
+
+#home {
+  height: 5vh;
+  margin-top: -5px;
 }
 
 /* ---------------------------------------Intro---------------------------------------------------------------*/
@@ -223,7 +231,7 @@ q {
   line-height: 0.8em;
 }
 #pagecontent .heading {
-  margin: 100px auto;
+  margin: 20vh auto;
 }
 #pagecontent .heading h4 {
   width: 100%;
@@ -279,7 +287,7 @@ q {
   color: #760074;
 }
 #cv .heading {
-  height: 100vh;
+  height: 70vh;
 }
 
 #jobb,
@@ -409,9 +417,6 @@ q {
   h4 {
     font-size: 3em;
   }
-  #cv h4 {
-    font-size: 2.5em;
-  }
   h3 {
     margin: 0;
     font-size: 3em;
@@ -450,6 +455,12 @@ q {
   }
   #cv p {
     max-width: 100%;
+  }
+  #cv h4 {
+    font-size: 2.5em;
+  }
+  #cv h1 {
+    font-size: 40em;
   }
   .btn {
     font-size: 4em;

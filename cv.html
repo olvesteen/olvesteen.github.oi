@@ -9,16 +9,22 @@
 </head>
 
 <body style="background-color: #FF90E8;">
+    <header>
+        <a href="index.html"><img src="img/logo-222.svg" alt="Her skulle det vært en logo."></a>
+    </header>
+    <!-- <header>
+        <a href="index.html"><div id="home"></div></a>
+    </header> -->
     <div class="container" id="cv">
         <div id="pagecontent">
             <div class="heading">
                 <h1>CV</h1>
-                <h3>Her er litt av hva jeg har gjort med livet mitt så langt. Først litt <a
+                <h3 style="margin-top: 5vh;">Her er litt av hva jeg har gjort med livet mitt så langt. Først litt <a
                         href="#utdannelse">utdannelse</a>,
                     så litt <a href="#jobb">arbeidserfaring</a> og litt <a href="#referanser">referanser</a>.
                 </h3>
             </div>
-            <div id="utdannelse">
+            <div id="utdannelse" style="padding-top: 0;">
                 <h3>Utdannelse</h3>
             </div>
             <section>
@@ -156,5 +162,14 @@
         </h3>
     </footer>
 </body>
-
+<script src="animation/lottie.js"></script>
+<script>
+    var animation = bodymovin.loadAnimation({
+        container: document.getElementById("home"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "animation/olveLogo.json"
+    })
+</script>
 </html>
